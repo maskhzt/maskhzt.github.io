@@ -43,9 +43,9 @@ graph LR
 Git 会把「谁提交的」写进每一个 commit，所以先配身份，再谈其他。配置分三级，**优先级从低到高**：`system`（整台机器）< `global`（当前用户）< `local`（当前仓库）。
 
 ```bash
-# 必配：提交署名（写错名字，历史里很难看）
-git config --global user.name "Haozhi Tang"
-git config --global user.email "tanghaozhi@aliyun.com"
+# 必配：提交署名
+git config --global user.name "username"
+git config --global user.email "example@aliyun.com"
 
 # 强烈建议：默认分支名、换行符、中文文件名显示
 git config --global init.defaultBranch main
