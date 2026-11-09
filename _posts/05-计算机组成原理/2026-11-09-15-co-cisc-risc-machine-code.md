@@ -376,7 +376,7 @@ CISC 也有简单指令：mov、add、jmp
 
 拿一条具体指令抬杠，通常不得分。
 
-## 3. 六个维度对比
+## 3. 八个维度对比
 
 把两家放在一张表里：
 
@@ -1513,6 +1513,7 @@ x86-64（AT&T，`-O0` 风格，简化示意）：
 sum:
     pushq %rbp
     movq  %rsp, %rbp
+    subq  $32, %rsp           # 留 32 字节局部变量区
     movq  %rdi, -24(%rbp)     # 保存 a
     movl  %esi, -28(%rbp)     # 保存 n
     movl  $0, -4(%rbp)        # s = 0
@@ -1532,6 +1533,7 @@ sum:
     cmpl  -28(%rbp), %eax     # 比较 i 和 n
     jl    .L3                 # i < n 就循环
     movl  -4(%rbp), %eax      # 返回值 = s
+    movq  %rbp, %rsp          # 恢复 rsp
     popq  %rbp
     ret
 ```
@@ -1550,7 +1552,8 @@ addl $1            i++
 .L2              条件判断
 jl .L3            成立就跳回循环体
 movl -4(%rbp)     把 s 放进 eax
-popq/ret          恢复栈帧、返回
+movq rbp,rsp      恢复 rsp
+popq/ret          恢复 rbp、返回
 ```
 
 这段代码里，C 的四个结构都能找到对应：
