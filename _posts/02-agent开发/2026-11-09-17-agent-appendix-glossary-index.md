@@ -8,11 +8,11 @@ description: "全系列的查阅页：一张术语表、六层地图与 18 篇�
 ---
 
 <!-- series-nav -->
+
 > **系列位置**：Agent 系统讲解，第 17 篇 / 共 18 篇
 > **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
 > **上一篇**：[16：综合项目：把 17 篇拼成一个成品](/posts/agent-capstone-checklist/)
 > **下一篇**：全系列完（回到 [学习地图](/posts/agent-systematic-learning-map/)）
-
 
 这一篇不是教程。
 
@@ -233,43 +233,43 @@ description: "全系列的查阅页：一张术语表、六层地图与 18 篇�
 
 ## 4. 18 篇一句话索引
 
-| 篇 | 标题 | 一句话 | 读完你会 |
-|---|---|---|---|
-| 00 | [从零建立 Agent 知识地图](/posts/agent-systematic-learning-map/) | 先把地图画出来 | 知道自己在第几层 |
-| 01 | [Agent、模型和消息契约](/posts/agent-model-message-contract/) | `role` 只有四种，顺序只有一种 | 能画出任意一轮的 messages |
-| 02 | [token、上下文窗口和单轮预算](/posts/agent-token-context-window-budget/) | 上下文不是记忆，是预算 | 会估一次请求多长 |
-| 03 | [工具协议与 JSON Schema](/posts/agent-tool-protocol-json-schema/) | 模型只看说明书 | 能把函数写成 schema |
-| 04 | [tool_calls、执行与观测回填](/posts/agent-tool-call-loop/) | 模型只发意图，执行的是你 | 能讲清一轮四步 |
-| 05 | [工具报错、自愈和刹车](/posts/agent-tool-error-selfheal-fuse/) | 让模型看见错误 | 知道错误怎么写才可行动 |
-| 06 | [上下文工程：塞什么、丢什么](/posts/agent-context-engineering/) | 裁剪是操作协议 | 能写出不拆坏消息对的裁剪 |
-| 07 | [记忆：从 messages 到跨会话](/posts/agent-memory-and-recall/) | 记不住，通常根本没写进去 | 有一份跨会话记忆设计 |
-| 08 | [结构化输出与校验修复](/posts/agent-structured-output/) | 解析 → 校验 → 修复 | 能让模型稳定吐 JSON |
-| 09 | [Evals：从感觉调到用数字调](/posts/agent-evals/) | eval 写的是「好」的定义 | 有一份 20 条用例的基线 |
-| 10 | [规划：把大任务拆成可验证的步](/posts/agent-planning-decomposition/) | 把状态搬出模型脑子 | 能拆 5 步以上的任务 |
-| 11 | [RAG：切分、检索与引用](/posts/agent-rag-retrieval-citation/) | 瓶颈通常在切分 | 能做出带出处的问答 |
-| 12 | [多 Agent：什么时候该拆](/posts/agent-multi-agent-delegation/) | 收益来自上下文隔离 | 说得出「不该拆」的场景 |
-| 13 | [安全：提示注入、权限和沙箱](/posts/agent-security-permissions-sandbox/) | 边界画在代码里 | 能给工具分级、加审批 |
-| 14 | [可观测性与成本](/posts/agent-observability-and-cost/) | 让失败可复现 | 有 trace 和账本 |
-| 15 | [接真模型：把假模型换掉](/posts/agent-connect-real-model/) | 要改的几乎全在适配器 | 真模型跑通且不崩 |
-| 16 | [综合项目：把 17 篇拼成一个成品](/posts/agent-capstone-checklist/) | 先把「好」定义清楚 | 有一个能交付的东西 |
-| 17 | 附录：术语表、对照与索引 | 就是这一页 | 查得到、对得上 |
+| 篇  | 标题                                                                     | 一句话                        | 读完你会                  |
+| --- | ------------------------------------------------------------------------ | ----------------------------- | ------------------------- |
+| 00  | [从零建立 Agent 知识地图](/posts/agent-systematic-learning-map/)         | 先把地图画出来                | 知道自己在第几层          |
+| 01  | [Agent、模型和消息契约](/posts/agent-model-message-contract/)            | `role` 只有四种，顺序只有一种 | 能画出任意一轮的 messages |
+| 02  | [token、上下文窗口和单轮预算](/posts/agent-token-context-window-budget/) | 上下文不是记忆，是预算        | 会估一次请求多长          |
+| 03  | [工具协议与 JSON Schema](/posts/agent-tool-protocol-json-schema/)        | 模型只看说明书                | 能把函数写成 schema       |
+| 04  | [tool_calls、执行与观测回填](/posts/agent-tool-call-loop/)               | 模型只发意图，执行的是你      | 能讲清一轮四步            |
+| 05  | [工具报错、自愈和刹车](/posts/agent-tool-error-selfheal-fuse/)           | 让模型看见错误                | 知道错误怎么写才可行动    |
+| 06  | [上下文工程：塞什么、丢什么](/posts/agent-context-engineering/)          | 裁剪是操作协议                | 能写出不拆坏消息对的裁剪  |
+| 07  | [记忆：从 messages 到跨会话](/posts/agent-memory-and-recall/)            | 记不住，通常根本没写进去      | 有一份跨会话记忆设计      |
+| 08  | [结构化输出与校验修复](/posts/agent-structured-output/)                  | 解析 → 校验 → 修复            | 能让模型稳定吐 JSON       |
+| 09  | [Evals：从感觉调到用数字调](/posts/agent-evals/)                         | eval 写的是「好」的定义       | 有一份 20 条用例的基线    |
+| 10  | [规划：把大任务拆成可验证的步](/posts/agent-planning-decomposition/)     | 把状态搬出模型脑子            | 能拆 5 步以上的任务       |
+| 11  | [RAG：切分、检索与引用](/posts/agent-rag-retrieval-citation/)            | 瓶颈通常在切分                | 能做出带出处的问答        |
+| 12  | [多 Agent：什么时候该拆](/posts/agent-multi-agent-delegation/)           | 收益来自上下文隔离            | 说得出「不该拆」的场景    |
+| 13  | [安全：提示注入、权限和沙箱](/posts/agent-security-permissions-sandbox/) | 边界画在代码里                | 能给工具分级、加审批      |
+| 14  | [可观测性与成本](/posts/agent-observability-and-cost/)                   | 让失败可复现                  | 有 trace 和账本           |
+| 15  | [接真模型：把假模型换掉](/posts/agent-connect-real-model/)               | 要改的几乎全在适配器          | 真模型跑通且不崩          |
+| 16  | [综合项目：把 17 篇拼成一个成品](/posts/agent-capstone-checklist/)       | 先把「好」定义清楚            | 有一个能交付的东西        |
+| 17  | 附录：术语表、对照与索引                                                 | 就是这一页                    | 查得到、对得上            |
 
 ## 5. 和 12 课训练营的对照
 
-| 训练营 | 对应篇目 | 动手文件 |
-|---|---|---|
-| L01 最小循环 | 01、04 | `labs/L01_agent_loop/agent.py` |
-| L02 工具协议 | 03、08 | `tools.py`、`exercise.py` |
-| L03 接真模型 | 15 | 自己写的适配器 |
-| L04 上下文工程 | 02、06 | 裁剪函数 |
-| L05 记忆 | 07 | `memory.md` |
-| L06 结构化输出 | 08 | `parse / validate / repair` |
-| L07 Evals | 09 | `evals.py` |
-| L08 规划 | 10 | `todo_write` |
-| L09 RAG | 11 | 最小检索脚本 |
-| L10 多 Agent | 12 | `delegate` 工具 |
-| L11 安全 | 13、14 | 权限分级 + trace |
-| L12 综合项目 | 16 | 你的成品 |
+| 训练营         | 对应篇目 | 动手文件                       |
+| -------------- | -------- | ------------------------------ |
+| L01 最小循环   | 01、04   | `labs/L01_agent_loop/agent.py` |
+| L02 工具协议   | 03、08   | `tools.py`、`exercise.py`      |
+| L03 接真模型   | 15       | 自己写的适配器                 |
+| L04 上下文工程 | 02、06   | 裁剪函数                       |
+| L05 记忆       | 07       | `memory.md`                    |
+| L06 结构化输出 | 08       | `parse / validate / repair`    |
+| L07 Evals      | 09       | `evals.py`                     |
+| L08 规划       | 10       | `todo_write`                   |
+| L09 RAG        | 11       | 最小检索脚本                   |
+| L10 多 Agent   | 12       | `delegate` 工具                |
+| L11 安全       | 13、14   | 权限分级 + trace               |
+| L12 综合项目   | 16       | 你的成品                       |
 
 ## 6. 每个 lab 文件，被哪几篇拆过
 
@@ -516,9 +516,3 @@ agent = 模型 + 一个循环 + 一套工具 + 一份被精心维护的历史
 不是因为模型不重要。
 
 是因为**模型之外的那三样，才是你能改进的地方**。
-
-下一篇没有了。
-
-现在去把 `labs/` 里的 `check.py` 跑到 5/5。
-
-然后做一个自己的东西。
