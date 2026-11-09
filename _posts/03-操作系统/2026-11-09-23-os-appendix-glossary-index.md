@@ -3,7 +3,7 @@ title: "操作系统系统讲解 23：附录：术语表、考点索引与自检
 date: 2026-11-09 12:50:00 +0800
 permalink: /posts/os-appendix-glossary-index/
 categories: [操作系统, 系统讲解]
-tags: [os, glossary, index, 408, review]
+tags: [os, glossary, index, "408", review]
 description: "全系列的收口：按五块分组的 60 余条术语、公式速查、20 组最容易混的概念对照、考点到篇目的逐条索引，以及 30 条只给题不给答案的自检。"
 ---
 

@@ -3,7 +3,7 @@ title: "操作系统系统讲解 08：信号量与 PV 操作"
 date: 2026-11-09 10:20:00 +0800
 permalink: /posts/os-semaphore-pv/
 categories: [操作系统, 系统讲解]
-tags: [os, semaphore, pv-operation, 408, producer-consumer, futex]
+tags: [os, semaphore, pv-operation, "408", producer-consumer, futex]
 description: "两个 P 调换一下顺序程序就会永久卡死，从信号量的 value 与等待队列讲起，说清 P/V 的语义、互斥与同步的固定模式、生产者消费者的顺序坑，以及用 PV 把前趋图翻译成代码的完整套路。"
 ---
 

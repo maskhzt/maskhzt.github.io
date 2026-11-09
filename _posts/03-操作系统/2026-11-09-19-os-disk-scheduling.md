@@ -3,7 +3,7 @@ title: "操作系统系统讲解 19：磁盘与磁盘调度"
 date: 2026-11-09 12:10:00 +0800
 permalink: /posts/os-disk-scheduling/
 categories: [操作系统, 系统讲解]
-tags: [os, disk, scheduling, scan, sstf, 408]
+tags: [os, disk, scheduling, scan, sstf, "408"]
 description: "从一次 12.3 ms 的读盘拆出寻道、旋转、传输三段，用同一组磁道请求把 FCFS、SSTF、SCAN、C-SCAN、LOOK、C-LOOK 逐个算成总移动磁道数，并解释 SSTF 为什么不是最优。"
 ---
 

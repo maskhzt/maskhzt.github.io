@@ -3,7 +3,7 @@ title: "操作系统系统讲解 21：I/O 软件层次、缓冲与 SPOOLing"
 date: 2026-11-09 12:30:00 +0800
 permalink: /posts/os-io-software/
 categories: [操作系统, 系统讲解]
-tags: [os, io, buffer, spooling, device-driver, ssd, 408]
+tags: [os, io, buffer, spooling, device-driver, ssd, "408"]
 description: "把 I/O 软件拆成四层，走一遍 read() 的完整路径，再把单缓冲、双缓冲、缓冲池和 SPOOLing 的账算清楚，最后看 SSD 为什么是「块设备但不转」。"
 ---
 

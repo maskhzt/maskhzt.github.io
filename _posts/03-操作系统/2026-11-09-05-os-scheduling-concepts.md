@@ -3,7 +3,7 @@ title: "操作系统系统讲解 05：调度：指标、时机与方式"
 date: 2026-11-09 09:50:00 +0800
 permalink: /posts/os-scheduling-concepts/
 categories: [操作系统, 系统讲解]
-tags: [os, scheduling, 408, turnaround, preemption, context-switch]
+tags: [os, scheduling, "408", turnaround, preemption, context-switch]
 description: "从三个同时到达的进程讲起，把三级调度、五个评价指标（外加带权周转）的公式、抢占与非抢占、四种调度时机和一次上下文切换的全过程拆开，最后给出 408 最爱问的平均周转时间算法。"
 ---
 

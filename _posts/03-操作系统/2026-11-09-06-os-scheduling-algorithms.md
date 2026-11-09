@@ -3,7 +3,7 @@ title: "操作系统系统讲解 06：调度算法：从 FCFS 到多级反馈"
 date: 2026-11-09 10:00:00 +0800
 permalink: /posts/os-scheduling-algorithms/
 categories: [操作系统, 系统讲解]
-tags: [os, scheduling, 408, mlfq, round-robin, realtime]
+tags: [os, scheduling, "408", mlfq, round-robin, realtime]
 description: "同一组进程换个算法平均周转能差一倍，从 FCFS 的护航效应讲到 SJF、HRRN、优先级、时间片轮转、多级反馈队列，再到 EDF、RMS 与多处理机调度，每个算法都给一个算得出来的例子。"
 ---
 

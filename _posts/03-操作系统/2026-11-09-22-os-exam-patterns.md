@@ -3,7 +3,7 @@ title: "操作系统系统讲解 22：408 计算题与综合题套路"
 date: 2026-11-09 12:40:00 +0800
 permalink: /posts/os-exam-patterns/
 categories: [操作系统, 系统讲解]
-tags: [os, 408, exam, problem-patterns, review, calculation]
+tags: [os, "408", exam, problem-patterns, review, calculation]
 description: "把 408 操作系统拆成十类题型，每类给识别信号、解题步骤、易错点和一道验算过的例题，再补时间分配、答题顺序和五条通用检查。"
 ---
 

@@ -3,7 +3,7 @@ title: "操作系统系统讲解 02：内核态、中断与系统调用"
 date: 2026-11-09 09:20:00 +0800
 permalink: /posts/os-kernel-mode-interrupt-syscall/
 categories: [操作系统, 系统讲解]
-tags: [os, 408, 内核态, 中断, 系统调用, 微内核]
+tags: [os, "408", 内核态, 中断, 系统调用, 微内核]
 description: "从一条特权指令讲起，把用户态与内核态的边界、中断与异常的分类、系统调用的完整路径、内核结构和引导过程串成一条线。"
 ---
 
