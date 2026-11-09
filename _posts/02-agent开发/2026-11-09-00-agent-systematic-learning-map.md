@@ -9,9 +9,9 @@ description: "从为什么 Agent 知识会显得零散讲起，把模型、消�
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 00 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
 > **上一篇**：无（这是系列第 1 篇）
-> **下一篇**：[01：Agent、模型和消息契约](./2026-11-09-01-agent-model-message-contract.md)
+> **下一篇**：[01：Agent、模型和消息契约](/posts/agent-model-message-contract/)
 
 
 这篇是一个新的开始。

@@ -9,9 +9,9 @@ description: "从模型看不见你的函数讲起，把工具说明书的四个
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 03 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[02：token、上下文窗口和单轮预算](./2026-11-09-02-agent-token-context-window-budget.md)
-> **下一篇**：[04：tool_calls、执行与观测回填](./2026-11-09-04-agent-tool-call-loop.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[02：token、上下文窗口和单轮预算](/posts/agent-token-context-window-budget/)
+> **下一篇**：[04：tool_calls、执行与观测回填](/posts/agent-tool-call-loop/)
 
 
 你写好了一个函数。

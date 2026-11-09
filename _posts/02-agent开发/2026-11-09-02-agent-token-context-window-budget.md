@@ -9,9 +9,9 @@ description: "把 token、上下文窗口和单轮预算讲成一个可以算的
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 02 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[01：Agent、模型和消息契约](./2026-11-09-01-agent-model-message-contract.md)
-> **下一篇**：[03：工具协议与 JSON Schema](./2026-11-09-03-agent-tool-protocol-json-schema.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[01：Agent、模型和消息契约](/posts/agent-model-message-contract/)
+> **下一篇**：[03：工具协议与 JSON Schema](/posts/agent-tool-protocol-json-schema/)
 
 
 01 篇讲完了消息的形状。

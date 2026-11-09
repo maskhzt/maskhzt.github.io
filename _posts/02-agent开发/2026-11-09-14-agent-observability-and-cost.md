@@ -9,9 +9,9 @@ description: "从一句「任务失败」讲起，说清 trace 与 span 的最�
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 14 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[13：安全：提示注入、权限和沙箱](./2026-11-09-13-agent-security-permissions-sandbox.md)
-> **下一篇**：[15：接真模型：把假模型换掉](./2026-11-09-15-agent-connect-real-model.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[13：安全：提示注入、权限和沙箱](/posts/agent-security-permissions-sandbox/)
+> **下一篇**：[15：接真模型：把假模型换掉](/posts/agent-connect-real-model/)
 
 
 用户报了一个错。
@@ -174,7 +174,7 @@ status       ok / error / timeout
 
 ### 2.2 trace_id 怎么穿到子 agent 里
 
-[12 篇](./2026-11-09-12-agent-multi-agent-delegation.md)那个 `delegate` 有这个问题：
+[12 篇](/posts/agent-multi-agent-delegation/)那个 `delegate` 有这个问题：
 
 ```python
 def delegate(task: str, context: str = "") -> str:
@@ -321,7 +321,7 @@ Anthropic：usage.input_tokens / usage.output_tokens
 ok       成功
 error    失败（工具抛错、解析失败）
 timeout  超时（要单独统计，它和 error 的修法完全不同）
-rejected 被策略/审批拒绝（[13 篇](./2026-11-09-13-agent-security-permissions-sandbox.md)那套）
+rejected 被策略/审批拒绝（[13 篇](/posts/agent-security-permissions-sandbox/)那套）
 ```
 
 `rejected` 单独一类，是因为它不是 bug。
@@ -837,7 +837,7 @@ def get_usage(reply) -> dict | None:
 
 是你的上下文在第 8 步之后开始劣化了。
 
-[06 篇](./2026-11-09-06-agent-context-engineering.md)整篇都在处理这件事。
+[06 篇](/posts/agent-context-engineering/)整篇都在处理这件事。
 
 ### 6.2 用 try/finally 保证 span 闭合
 
@@ -1160,7 +1160,7 @@ system prompt        1200 token × 10 次 = 12000 输入
 
 步数翻倍，输入成本大约翻四倍。
 
-所以[06 篇](./2026-11-09-06-agent-context-engineering.md)讲的上下文裁剪，不只为了不超窗口，也为了省钱。
+所以[06 篇](/posts/agent-context-engineering/)讲的上下文裁剪，不只为了不超窗口，也为了省钱。
 
 把历史从 3000 压到 1500，输入成本直接减半。
 
@@ -1196,7 +1196,7 @@ messages.append(Message("user", "预算已到上限，请用现有信息给出�
 保险丝不是"炸掉"，是"体面地停下"。
 ```
 
-[05 篇](./2026-11-09-05-agent-error-selfheal-fuse.md)讲过这个设计。
+[05 篇](/posts/agent-tool-error-selfheal-fuse/)讲过这个设计。
 
 区别只在于：一个是步数预算，一个是 token 预算。
 
@@ -1315,7 +1315,7 @@ version = prompt 版本 + 工具版本 + 模型名
 
 四类分开统计，你才能看到"看起来成功但没用"的那一批。
 
-[09 篇](./2026-11-09-09-agent-evals.md)的评测讲的是离线怎么定义成功。
+[09 篇](/posts/agent-evals/)的评测讲的是离线怎么定义成功。
 
 这里讲的是线上怎么记。
 
@@ -1534,9 +1534,9 @@ def redact(obj):
 
 访问控制能挡住一部分人，挡不住备份、导出、误配的权限、以及三个月后忘了这回事的你。
 
-[13 篇](./2026-11-09-13-agent-security-permissions-sandbox.md)那套 `redact` 可以直接复用。
+[13 篇](/posts/agent-security-permissions-sandbox/)那套 `redact` 可以直接复用。
 
-区别是：[13 篇](./2026-11-09-13-agent-security-permissions-sandbox.md)拦的是"回显给模型"，这里拦的是"落下磁盘"。
+区别是：[13 篇](/posts/agent-security-permissions-sandbox/)拦的是"回显给模型"，这里拦的是"落下磁盘"。
 
 两边都要做。
 
@@ -1578,7 +1578,7 @@ sampled = true / false
 ```text
 ① 用户能要求删除自己的 trace（要能按 user_id 删干净）
 ② trace 里不放不必要的原文（能存摘要就不存全文）
-③ 跨用户的数据不能进同一个上下文（这是 [07 篇](./2026-11-09-07-agent-memory-and-recall.md)记忆的坑）
+③ 跨用户的数据不能进同一个上下文（这是 [07 篇](/posts/agent-memory-and-recall/)记忆的坑）
 ```
 
 第三条是 agent 特有的。

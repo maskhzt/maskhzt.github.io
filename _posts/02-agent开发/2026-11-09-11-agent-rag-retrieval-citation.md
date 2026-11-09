@@ -9,9 +9,9 @@ description: "从 agent 读不到你文档的真实现象讲起，把 RAG 拆成
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 11 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[10：规划：把大任务拆成可验证的步](./2026-11-09-10-agent-planning-decomposition.md)
-> **下一篇**：[12：多 Agent：什么时候该拆](./2026-11-09-12-agent-multi-agent-delegation.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[10：规划：把大任务拆成可验证的步](/posts/agent-planning-decomposition/)
+> **下一篇**：[12：多 Agent：什么时候该拆](/posts/agent-multi-agent-delegation/)
 
 
 有人问了一个很具体的问题。

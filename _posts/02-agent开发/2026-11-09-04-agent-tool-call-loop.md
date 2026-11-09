@@ -9,9 +9,9 @@ description: "把一轮工具调用拆成四步：拼 messages、模型回 tool_
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 04 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[03：工具协议与 JSON Schema](./2026-11-09-03-agent-tool-protocol-json-schema.md)
-> **下一篇**：[05：工具报错、自愈和刹车](./2026-11-09-05-agent-error-selfheal-fuse.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[03：工具协议与 JSON Schema](/posts/agent-tool-protocol-json-schema/)
+> **下一篇**：[05：工具报错、自愈和刹车](/posts/agent-tool-error-selfheal-fuse/)
 
 
 模型回了两条 `tool_calls`。

@@ -9,9 +9,9 @@ description: "从一次本不该出现的 traceback 讲起，说清工具异常�
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 05 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[04：tool_calls、执行与观测回填](./2026-11-09-04-agent-tool-call-loop.md)
-> **下一篇**：[06：上下文工程：塞什么、丢什么](./2026-11-09-06-agent-context-engineering.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[04：tool_calls、执行与观测回填](/posts/agent-tool-call-loop/)
+> **下一篇**：[06：上下文工程：塞什么、丢什么](/posts/agent-context-engineering/)
 
 
 程序崩了。

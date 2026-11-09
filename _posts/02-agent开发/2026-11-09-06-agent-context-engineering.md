@@ -9,9 +9,9 @@ description: "从一次请求的预算怎么被瓜分讲起，用 run.py 场景 
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 06 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[05：工具报错、自愈和刹车](./2026-11-09-05-agent-error-selfheal-fuse.md)
-> **下一篇**：[07：记忆：从 messages 到跨会话](./2026-11-09-07-agent-memory-and-recall.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[05：工具报错、自愈和刹车](/posts/agent-tool-error-selfheal-fuse/)
+> **下一篇**：[07：记忆：从 messages 到跨会话](/posts/agent-memory-and-recall/)
 
 
 一个 agent 跑到第 20 轮，模型突然问：
@@ -128,7 +128,7 @@ description: "从一次请求的预算怎么被瓜分讲起，用 run.py 场景 
 
 你还没开始说话，预算已经少了一大截。
 
-这一点 03 篇（[工具协议与 JSON Schema](./2026-11-09-03-agent-tool-protocol-json-schema.md)）讲过形状，这里只算账。
+这一点 03 篇（[工具协议与 JSON Schema](/posts/agent-tool-protocol-json-schema/)）讲过形状，这里只算账。
 
 ③ **历史 messages**：这是最大的一块，也是唯一可以动的一块。
 
@@ -314,7 +314,7 @@ for call in reply.tool_calls:
 
 其中两次 `content` 是空的，只有 `tool_calls`。
 
-这是协议允许的，[01 篇](./2026-11-09-01-agent-model-message-contract.md)说过。
+这是协议允许的，[01 篇](/posts/agent-model-message-contract/)说过。
 
 第三，模型从来没有「记住」过任何东西。
 
@@ -361,7 +361,7 @@ tool       q3 的结果
 
 一条消息装不下三个编号。
 
-这是 [04 篇](./2026-11-09-04-agent-tool-call-loop.md)讲过的形状：一个请求配一条观测。
+这是 [04 篇](/posts/agent-tool-call-loop/)讲过的形状：一个请求配一条观测。
 
 第四，这 7 条里只有 2 条是人写的。
 

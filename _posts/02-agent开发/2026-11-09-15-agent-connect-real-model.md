@@ -9,9 +9,9 @@ description: "把 L01 的 ScriptedModel 换成真模型：arguments 是字符串
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 15 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[14：可观测性与成本](./2026-11-09-14-agent-observability-and-cost.md)
-> **下一篇**：[16：综合项目：把 17 篇拼成一个成品](./2026-11-09-16-agent-capstone-checklist.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[14：可观测性与成本](/posts/agent-observability-and-cost/)
+> **下一篇**：[16：综合项目：把 17 篇拼成一个成品](/posts/agent-capstone-checklist/)
 
 
 你写了一个适配器。
@@ -129,7 +129,7 @@ def run_agent(
 
 写了真模型之后，`ScriptedModel` 不能删。
 它是你的回归测试夹具（fixture）：不花钱、不联网、跑得比真的快一千倍。
-[09 篇](./2026-11-09-09-agent-evals.md)那套评测（eval）里，一半用例到现在还是用假模型跑的。
+[09 篇](/posts/agent-evals/)那套评测（eval）里，一半用例到现在还是用假模型跑的。
 
 第三样：换供应商的时候，改动有边界。
 
@@ -183,7 +183,7 @@ L01 把这两件事做对了，所以你现在不用改。
 剩下八行里，第 9 行和第 10 行的处理方式最容易被低估。
 它们看起来是"运维问题"，实际决定你能不能用真模型调一个系统。
 一个结果随机的系统，你没法定评测；一个账单不透明的系统，你没法定预算。
-这两件事分别在 [09 篇](./2026-11-09-09-agent-evals.md) 和 [14 篇](./2026-11-09-14-agent-observability-and-cost.md) 里，接真模型之后才真正开始生效。
+这两件事分别在 [09 篇](/posts/agent-evals/) 和 [14 篇](/posts/agent-observability-and-cost/) 里，接真模型之后才真正开始生效。
 
 这张表还有一种记法。
 
@@ -369,7 +369,7 @@ def _map_http(status: int, body: str) -> ModelError:
 一件：为什么每次都那么贵。
 第 2 层那个 payload 是全量快照。
 历史有多长，发出去就有多长。
-`messages` 里的每一条，每一轮都重新计费。这就是 [02 篇](./2026-11-09-02-agent-token-context-window-budget.md)说"上下文是单次预算"的实际含义。
+`messages` 里的每一条，每一轮都重新计费。这就是 [02 篇](/posts/agent-token-context-window-budget/)说"上下文是单次预算"的实际含义。
 
 二件：为什么同样的输入，账单会不一样。
 第 3 层重试了一次。
@@ -468,7 +468,7 @@ Anthropic 用 `tools` + `tool_use` / `tool_result` 内容块。
 上面的适配器选了严格路线：抛 `BadRequestError`，由外层决定怎么处理。
 
 还有一条宽松路线：把解析失败变成一条 `tool` 消息，让模型自己重试。
-那条路要多改一处 `_execute`，是 [05 篇](./2026-11-09-05-agent-error-selfheal-fuse.md)讲的自愈（self-heal）。
+那条路要多改一处 `_execute`，是 [05 篇](/posts/agent-tool-error-selfheal-fuse/)讲的自愈（self-heal）。
 
 两条都能用。
 区别是：严格路线保证你拿不到"看起来对"的结果，宽松路线保证任务不中断。
@@ -499,7 +499,7 @@ Anthropic 用 `tools` + `tool_use` / `tool_result` 内容块。
 
 `or ""` 还有一个副作用你可能不喜欢：`content` 是 `0` 或 `false` 时也会变成空串。
 在这里没问题，因为 `content` 只可能是字符串或 `null`。
-但这个坑换到结构化输出（[08 篇](./2026-11-09-08-agent-structured-output.md)）里就致命了，那里 `0` 是合法值，不能和"没有"混为一谈。
+但这个坑换到结构化输出（[08 篇](/posts/agent-structured-output/)）里就致命了，那里 `0` 是合法值，不能和"没有"混为一谈。
 
 ### 7.1 "只说话不调工具"和"一直调工具"
 
@@ -512,7 +512,7 @@ Anthropic 用 `tools` + `tool_use` / `tool_result` 内容块。
 
 第二种在接真模型后会明显变多，因为假模型永远按剧本走。
 识别方法很土：看它的回答里有没有"我无法获取实时信息"这类话，或者直接对答案。
-处理方法是 [03 篇](./2026-11-09-03-agent-tool-protocol-json-schema.md)那件事，把工具描述写清楚，把 `tool_choice` 用对。
+处理方法是 [03 篇](/posts/agent-tool-protocol-json-schema/)那件事，把工具描述写清楚，把 `tool_choice` 用对。
 
 一直调工具，也有两种情况。
 
@@ -538,7 +538,7 @@ L01 里它是演示，L03 里它是保命的。
 用户想知道的是：它做到哪一步了，哪些结论已经确定，哪些还没有。
 
 所以生产里那个兜底回答，通常是拿历史里最后几条观测拼出来的半成品，再加一句"我卡在第三步，需要你确认 X"。
-这一点在 [10 篇](./2026-11-09-10-agent-planning-decomposition.md)的规划器里会变成"未完成步骤清单"。
+这一点在 [10 篇](/posts/agent-planning-decomposition/)的规划器里会变成"未完成步骤清单"。
 
 ## 8. 一轮多个 `tool_calls`：`id` 和服务端对账
 
@@ -757,7 +757,7 @@ def retry(max_attempts=5, base=0.5, cap=20.0):
 重试一次有副作用的工具调用，最坏是把事情做坏两遍。
 
 所以重试只套在模型调用上。
-工具的重试是另一回事，要按 05 篇和 [13 篇](./2026-11-09-13-agent-security-permissions-sandbox.md)的规矩单独设计。
+工具的重试是另一回事，要按 05 篇和 [13 篇](/posts/agent-security-permissions-sandbox/)的规矩单独设计。
 
 ### 10.3 超时怎么设
 
@@ -810,7 +810,7 @@ def retry(max_attempts=5, base=0.5, cap=20.0):
 重试只会再超限一次。
 
 处理是把历史裁到窗口以内：丢最早的、保留最近的、或者把中间一段摘要成一句。
-这是 [06 篇](./2026-11-09-06-agent-context-engineering.md)的全部内容。
+这是 [06 篇](/posts/agent-context-engineering/)的全部内容。
 
 这里只补一句取舍，因为它在接真模型的第一周就会碰到。
 

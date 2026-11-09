@@ -9,9 +9,9 @@ description: "从一句话任务为什么会迷路讲起，把规划拆成清单
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 10 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[09：Evals：从感觉调到用数字调](./2026-11-09-09-agent-evals.md)
-> **下一篇**：[11：RAG：切分、检索与引用](./2026-11-09-11-agent-rag-retrieval-citation.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[09：Evals：从感觉调到用数字调](/posts/agent-evals/)
+> **下一篇**：[11：RAG：切分、检索与引用](/posts/agent-rag-retrieval-citation/)
 
 
 用户发来一句话。

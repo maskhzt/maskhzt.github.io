@@ -9,9 +9,9 @@ description: "从一次把简单任务拆坏的经历讲起，说清单个 agent
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 12 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[11：RAG：切分、检索与引用](./2026-11-09-11-agent-rag-retrieval-citation.md)
-> **下一篇**：[13：安全：提示注入、权限和沙箱](./2026-11-09-13-agent-security-permissions-sandbox.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[11：RAG：切分、检索与引用](/posts/agent-rag-retrieval-citation/)
+> **下一篇**：[13：安全：提示注入、权限和沙箱](/posts/agent-security-permissions-sandbox/)
 
 
 上个月我把一个任务拆成了三个 agent。
@@ -134,7 +134,7 @@ system prompt        固定成本
 
 如果你的任务需要读 30 个文件再总结，那么无论怎么裁剪，主线上下文都会被撑爆。
 
-[06 篇](./2026-11-09-06-agent-context-engineering.md)讲过裁剪和摘要压缩。
+[06 篇](/posts/agent-context-engineering/)讲过裁剪和摘要压缩。
 
 但裁剪有个上限。
 
@@ -382,7 +382,7 @@ context  它能用到的背景（不是全部历史）
 
 当你不确定下一步该做什么的时候。
 
-那种情况需要的是[10 篇](./2026-11-09-10-agent-planning-decomposition.md)的规划器，不是流水线。
+那种情况需要的是[10 篇](/posts/agent-planning-decomposition/)的规划器，不是流水线。
 
 三种形态怎么选？
 
@@ -485,7 +485,7 @@ def delegate(task: str, context: str = "", max_steps: int = 8) -> str:
 
 子 agent 拿不到主 agent 的写文件权限，就写不坏东西。
 
-这是[13 篇](./2026-11-09-13-agent-security-permissions-sandbox.md)最小权限原则在多 Agent 里的直接应用。
+这是[13 篇](/posts/agent-security-permissions-sandbox/)最小权限原则在多 Agent 里的直接应用。
 
 第三行：`normalize_summary`。
 
@@ -581,7 +581,7 @@ answer = run_agent(model, TOOLS, messages, max_steps=12)
 
 第一个：子 agent 的 messages 在返回后就没了。
 
-除非你把它存下来（[14 篇](./2026-11-09-14-agent-observability-and-cost.md)讲怎么存），否则它是一段只活几秒的历史。
+除非你把它存下来（[14 篇](/posts/agent-observability-and-cost/)讲怎么存），否则它是一段只活几秒的历史。
 
 出问题的时候，你只有一句结论，没有过程。
 
@@ -615,7 +615,7 @@ answer = run_agent(model, TOOLS, messages, max_steps=12)
 
 两条线各有各的编号空间，不要指望能对上。
 
-要对上，只能靠你在记录里写一个父子关系，[14 篇](./2026-11-09-14-agent-observability-and-cost.md)讲怎么记。
+要对上，只能靠你在记录里写一个父子关系，[14 篇](/posts/agent-observability-and-cost/)讲怎么记。
 
 顺手说一句 `verbose=False`。
 
@@ -933,7 +933,7 @@ def normalize_summary(raw: str) -> str:
 
 错误也是观测。
 
-[08 篇](./2026-11-09-08-agent-structured-output.md)讲过怎么用 schema 约束和重试修复让模型稳定吐 JSON。
+[08 篇](/posts/agent-structured-output/)讲过怎么用 schema 约束和重试修复让模型稳定吐 JSON。
 
 这里只加一条多 Agent 特有的规矩：
 
@@ -1165,7 +1165,7 @@ P95 时延
 
 但端到端的通过率没变，甚至更低。
 
-[09 篇](./2026-11-09-09-agent-evals.md)讲的端到端用例，就是专门防这个的。
+[09 篇](/posts/agent-evals/)讲的端到端用例，就是专门防这个的。
 
 ### 11.2 agent 之间互相聊天没有终止条件
 
@@ -1374,7 +1374,7 @@ labs/L01_agent_loop/agent.py
 
 两条都要有。
 
-[05 篇](./2026-11-09-05-agent-error-selfheal-fuse.md)讲的是第一条，这篇第 8 节讲的是第二条。
+[05 篇](/posts/agent-tool-error-selfheal-fuse/)讲的是第一条，这篇第 8 节讲的是第二条。
 
 ## 13. 读代码时怎么判断
 

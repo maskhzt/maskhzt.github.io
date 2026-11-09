@@ -9,9 +9,9 @@ description: "从会话结束 messages 就没了讲起，用一个 Markdown 文�
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 07 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[06：上下文工程：塞什么、丢什么](./2026-11-09-06-agent-context-engineering.md)
-> **下一篇**：[08：结构化输出与校验修复](./2026-11-09-08-agent-structured-output.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[06：上下文工程：塞什么、丢什么](/posts/agent-context-engineering/)
+> **下一篇**：[08：结构化输出与校验修复](/posts/agent-structured-output/)
 
 
 第二天早上，你打开同一个 agent，说：
@@ -76,7 +76,7 @@ messages = [
 
 是那 7 条消息已经不在内存里了。
 
-[06 篇](./2026-11-09-06-agent-context-engineering.md)说过：模型是无状态的，记忆在 messages 里。
+[06 篇](/posts/agent-context-engineering/)说过：模型是无状态的，记忆在 messages 里。
 
 现在要补一句更狠的：
 
@@ -1427,7 +1427,7 @@ RAG 让 agent 懂业务。
 
 **摘要 ≠ 记忆。**
 
-摘要是 [06 篇](./2026-11-09-06-agent-context-engineering.md)讲的：把这次会话压短。
+摘要是 [06 篇](/posts/agent-context-engineering/)讲的：把这次会话压短。
 
 记忆是这一篇讲的：把这次会话留下来。
 
@@ -1451,7 +1451,7 @@ RAG 让 agent 懂业务。
 
 **错误观测也是一种记忆。**
 
-[05 篇](./2026-11-09-05-agent-error-selfheal-fuse.md)讲过：工具报错被当成观测回填。
+[05 篇](/posts/agent-tool-error-selfheal-fuse/)讲过：工具报错被当成观测回填。
 
 那是极短期的记忆，只活在这几轮里。
 

@@ -9,9 +9,9 @@ description: "从场景选择到灰度上线：需求怎么映射成能力、十
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 16 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[15：接真模型：把假模型换掉](./2026-11-09-15-agent-connect-real-model.md)
-> **下一篇**：[17：附录：术语表、12 课对照与全书索引](./2026-11-09-17-agent-appendix-glossary-index.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[15：接真模型：把假模型换掉](/posts/agent-connect-real-model/)
+> **下一篇**：[17：附录：术语表、12 课对照与全书索引](/posts/agent-appendix-glossary-index/)
 
 
 你花了两个周末，做了一个能跑的东西。
@@ -34,7 +34,7 @@ description: "从场景选择到灰度上线：需求怎么映射成能力、十
 
 ## 1. 先把"好"定义清楚
 
-[09 篇](./2026-11-09-09-agent-evals.md)说过一句话，这里再引一次：没有评测（eval）的人，是在凭感觉调 agent。
+[09 篇](/posts/agent-evals/)说过一句话，这里再引一次：没有评测（eval）的人，是在凭感觉调 agent。
 
 放到综合项目上，这句话要再狠一点。
 
@@ -115,7 +115,7 @@ description: "从场景选择到灰度上线：需求怎么映射成能力、十
 判据三：数据是否私有。
 
 你的笔记、你公司的代码、你的客户名单。
-数据越私有，你越不能拿它去试错，也越要注意 [13 篇](./2026-11-09-13-agent-security-permissions-sandbox.md)那些边界。
+数据越私有，你越不能拿它去试错，也越要注意 [13 篇](/posts/agent-security-permissions-sandbox/)那些边界。
 
 私有数据还有一个副作用：你不能把请求直接发给随便一个服务，得先想清楚数据会去哪。
 
@@ -172,7 +172,7 @@ description: "从场景选择到灰度上线：需求怎么映射成能力、十
 不需要，如果资料能整段塞进上下文。
 
 三页文档塞得下，别上向量库。
-[11 篇](./2026-11-09-11-agent-rag-retrieval-citation.md)讲过：RAG 是"先检索再塞上下文"的流程，不是"必须有个向量数据库"。
+[11 篇](/posts/agent-rag-retrieval-citation/)讲过：RAG 是"先检索再塞上下文"的流程，不是"必须有个向量数据库"。
 
 二十个文件的关键词搜索，可能比一套嵌入模型加索引更准，也更好调。
 你的笔记量没到几千篇之前，简单的全文检索就够。
@@ -182,14 +182,14 @@ description: "从场景选择到灰度上线：需求怎么映射成能力、十
 需要，如果任务要五步以上，而且中间步骤的成败会影响下一步。
 不需要，如果流程是固定的：读文件、检索、回答，三步走完。
 
-[10 篇](./2026-11-09-10-agent-planning-decomposition.md)的 todo 规划器解决的是"步骤之间互相依赖"的问题。
+[10 篇](/posts/agent-planning-decomposition/)的 todo 规划器解决的是"步骤之间互相依赖"的问题。
 如果你的流程是一根直线，加规划只会多两次模型调用，和更多不确定性。
 
 第四个问题：需要多 Agent 吗？
 
 多数场景的答案是不需要。
 
-[12 篇](./2026-11-09-12-agent-multi-agent-delegation.md)的结论可以直接搬过来：多 Agent 解决的是"上下文装不下"和"子任务可以并行且互不依赖"。
+[12 篇](/posts/agent-multi-agent-delegation/)的结论可以直接搬过来：多 Agent 解决的是"上下文装不下"和"子任务可以并行且互不依赖"。
 不是为了"看起来更架构"。
 
 四个问题问完，你大概会得到这样一个答案。
@@ -352,7 +352,7 @@ def _execute(call: ToolCall, tools: dict[str, Tool]) -> str:
 - 真模型跑通，`arguments` 解析、`content` 为 null、一轮多个 `tool_calls` 都不炸
 - 断网时程序不崩，报的错能看懂
 
-最后两条是 [15 篇](./2026-11-09-15-agent-connect-real-model.md)的验收线，直接搬过来用。
+最后两条是 [15 篇](/posts/agent-connect-real-model/)的验收线，直接搬过来用。
 
 ## 6. 第 4 到 5 步：工具与上下文
 
@@ -374,7 +374,7 @@ def _execute(call: ToolCall, tools: dict[str, Tool]) -> str:
 不可逆的动作，删除、发送、支付，必须单独走审批，不能和查询类工具混在一个列表里。
 混在一起的后果是：模型在一次正常的查询里顺手调了删除，而你没有拦住它的地方。
 
-工具描述和 schema 的写法在 [03 篇](./2026-11-09-03-agent-tool-protocol-json-schema.md)。
+工具描述和 schema 的写法在 [03 篇](/posts/agent-tool-protocol-json-schema/)。
 这里只补一条验收标准：把所有工具的错误都当成正常输入跑一遍，每个错误都要变成一条可读的观测，任务不中断。
 
 上面那个 `_execute` 就是这条标准的实现。
@@ -393,13 +393,13 @@ def _execute(call: ToolCall, tools: dict[str, Tool]) -> str:
 
 第一件：算一次请求的固定开销。
 system prompt 多少字、工具 schema 多少字、最近三轮对话多少字。
-[02 篇](./2026-11-09-02-agent-token-context-window-budget.md)的方法，粗估就行，不用精确到个位。
+[02 篇](/posts/agent-token-context-window-budget/)的方法，粗估就行，不用精确到个位。
 
 第二件：定一个上限。
 窗口的六成，留四成给输出和波动。
 
 第三件：定裁剪策略。
-超了丢最早的、还是摘要中间的，见 [06 篇](./2026-11-09-06-agent-context-engineering.md)。
+超了丢最早的、还是摘要中间的，见 [06 篇](/posts/agent-context-engineering/)。
 
 验收标准只有一条，但要跑够轮次：连续十轮，不超限，关键信息不丢。
 
@@ -716,7 +716,7 @@ python eval.py --cases cases.jsonl --report out/report.md
 四句话里，"检查项"那一条最重要。
 没有它，这次复盘只解决这一次；有了它，下次同样的错会被自动拦住。
 
-这就是 [05 篇](./2026-11-09-05-agent-error-selfheal-fuse.md)说的"自愈"在流程上的版本：不是让 agent 自愈，是让你的项目自愈。
+这就是 [05 篇](/posts/agent-tool-error-selfheal-fuse/)说的"自愈"在流程上的版本：不是让 agent 自愈，是让你的项目自愈。
 
 ## 12. 把 16 篇收回到一张图
 
@@ -770,7 +770,7 @@ python eval.py --cases cases.jsonl --report out/report.md
 这就是为什么"换个更强的模型"很少能救一个跑不起来的 agent。
 跑不起来的原因，九成在那十六篇里。
 
-这也是 [01 篇](./2026-11-09-01-agent-model-message-contract.md)那句话的完整版本：agent 是模型加一个循环加一套工具加一份被维护的历史。
+这也是 [01 篇](/posts/agent-model-message-contract/)那句话的完整版本：agent 是模型加一个循环加一套工具加一份被维护的历史。
 四样东西里只有一样是模型。
 另外三样，全是你写的。
 

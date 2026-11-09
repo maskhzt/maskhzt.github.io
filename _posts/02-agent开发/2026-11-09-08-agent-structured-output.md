@@ -9,9 +9,9 @@ description: "从自然语言为什么不能直接进程序讲起，给出 parse
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 08 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[07：记忆：从 messages 到跨会话](./2026-11-09-07-agent-memory-and-recall.md)
-> **下一篇**：[09：Evals：从感觉调到用数字调](./2026-11-09-09-agent-evals.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[07：记忆：从 messages 到跨会话](/posts/agent-memory-and-recall/)
+> **下一篇**：[09：Evals：从感觉调到用数字调](/posts/agent-evals/)
 
 
 你让模型把商品信息整理成一条记录。
@@ -1141,7 +1141,7 @@ if not isinstance(call.args.get("a"), (int, float)):
 schema 管形状，你管执行。
 ```
 
-[03 篇](./2026-11-09-03-agent-tool-protocol-json-schema.md)讲过 schema 的写法，[04 篇](./2026-11-09-04-agent-tool-call-loop.md)讲过回填。
+[03 篇](/posts/agent-tool-protocol-json-schema/)讲过 schema 的写法，[04 篇](/posts/agent-tool-call-loop/)讲过回填。
 
 这一篇补的是它们中间那一步：**模型给的参数，是字符串，你要自己解析和校验。**
 
@@ -1339,7 +1339,7 @@ return str(tool(**call.args))
 
 漏了第二处，工具会拿着 `"100"` 去算，报一个更深的错。
 
-漏了第三处，agent 遇到坏 JSON 就直接崩，[05 篇](./2026-11-09-05-agent-error-selfheal-fuse.md)讲的自愈就白写了。
+漏了第三处，agent 遇到坏 JSON 就直接崩，[05 篇](/posts/agent-tool-error-selfheal-fuse/)讲的自愈就白写了。
 
 ### 一处最小改动
 

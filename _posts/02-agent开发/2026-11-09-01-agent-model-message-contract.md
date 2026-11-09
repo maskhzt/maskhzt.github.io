@@ -9,9 +9,9 @@ description: "把 agent 拆成模型、循环、工具和消息四部分，逐�
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 01 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[00：从零建立 Agent 知识地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **下一篇**：[02：token、上下文窗口和单轮预算](./2026-11-09-02-agent-token-context-window-budget.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[00：从零建立 Agent 知识地图](/posts/agent-systematic-learning-map/)
+> **下一篇**：[02：token、上下文窗口和单轮预算](/posts/agent-token-context-window-budget/)
 
 
 一个 agent 跑不起来，十次里有八次不是模型笨。

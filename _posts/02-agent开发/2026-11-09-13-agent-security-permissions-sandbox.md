@@ -9,9 +9,9 @@ description: "从一条工具返回结果里藏的指令讲起，说清提示注
 
 <!-- series-nav -->
 > **系列位置**：Agent 系统讲解，第 13 篇 / 共 18 篇
-> **总目录**：[学习地图](./2026-11-09-00-agent-systematic-learning-map.md)
-> **上一篇**：[12：多 Agent：什么时候该拆](./2026-11-09-12-agent-multi-agent-delegation.md)
-> **下一篇**：[14：可观测性与成本](./2026-11-09-14-agent-observability-and-cost.md)
+> **总目录**：[学习地图](/posts/agent-systematic-learning-map/)
+> **上一篇**：[12：多 Agent：什么时候该拆](/posts/agent-multi-agent-delegation/)
+> **下一篇**：[14：可观测性与成本](/posts/agent-observability-and-cost/)
 
 
 先看一段工具返回。
@@ -162,7 +162,7 @@ system prompt 里不要放任何秘密。
 
 在你的系统里，它和你的 system prompt 躺在同一个上下文里。
 
-[11 篇](./2026-11-09-11-agent-rag-retrieval-citation.md)讲过怎么切分和引用。
+[11 篇](/posts/agent-rag-retrieval-citation/)讲过怎么切分和引用。
 
 那一篇讲的是"怎么找到对的片段"。
 
@@ -412,7 +412,7 @@ prompt 里的约束   → 降低成功率，防不住决心
 
 这张表写下来，你会发现它同时解决了一个多 Agent 的问题。
 
-[12 篇](./2026-11-09-12-agent-multi-agent-delegation.md)里说子 agent 不该和主 agent 共享工具集。
+[12 篇](/posts/agent-multi-agent-delegation/)里说子 agent 不该和主 agent 共享工具集。
 
 理由就在这张表里：子 agent 的输入更容易被污染（它读的是外部资料），所以它更不该有写权限。
 
@@ -1525,7 +1525,7 @@ agent 跑在容器里，只挂载 D:/agent_workspace。
 
 这句话让复盘从"猜"变成"读"。
 
-所以第 [14 篇](./2026-11-09-14-agent-observability-and-cost.md)会讲：把每一步的 messages 存下来，比把最终结果存下来重要得多。
+所以第 [14 篇](/posts/agent-observability-and-cost/)会讲：把每一步的 messages 存下来，比把最终结果存下来重要得多。
 
 ## 13. 纵深防御的分层图
 
