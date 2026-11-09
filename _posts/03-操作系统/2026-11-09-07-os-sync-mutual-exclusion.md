@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 07：同步与互斥：临界区、Peterson 与硬件指令"
 date: 2026-11-09 10:10:00 +0800
 permalink: /posts/os-sync-mutual-exclusion/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, synchronization, "408", peterson, testandset, spinlock]
 description: "从两个线程各加一百万次却少了几十万讲起，把临界区四原则、单标志法、双标志先检查与后检查、Peterson 算法和 TSL、Swap 指令逐行拆开，最后说明软件方法为什么在多核上失效。"
 ---

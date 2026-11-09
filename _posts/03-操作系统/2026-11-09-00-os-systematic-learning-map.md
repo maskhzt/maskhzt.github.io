@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 00：从零建立操作系统知识地图"
 date: 2026-11-09 09:00:00 +0800
 permalink: /posts/os-systematic-learning-map/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, learning-map, "408", process, memory, filesystem, io]
 description: "从为什么操作系统的知识会显得零散讲起，用「三个虚拟化 + 一个持久化 + 一个总管」串起概述、进程、内存、文件和 I/O 五块内容，给出覆盖 408 全部考点的 24 篇学习地图。"
 ---

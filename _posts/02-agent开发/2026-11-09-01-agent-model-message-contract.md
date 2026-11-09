@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 01：Agent、模型和消息契约"
 date: 2026-11-09 10:05:00 +0800
 permalink: /posts/agent-model-message-contract/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, llm, message, role, tool-call, tool-call-id, protocol]
 description: "把 agent 拆成模型、循环、工具和消息四部分，逐字段拆解 Message 与 ToolCall，并解释消息顺序、tool_call_id 对账和四种角色的协议约束。"
 ---

@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 03：进程：PCB、状态与控制"
 date: 2026-11-09 09:30:00 +0800
 permalink: /posts/os-process-pcb/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, "408", 进程, pcb, 上下文切换, 进程状态]
 description: "把进程拆成程序、数据和 PCB 三部分，用三态、五态、七态画出它的全部合法转换，再算清一次进程切换到底贵在哪里。"
 ---

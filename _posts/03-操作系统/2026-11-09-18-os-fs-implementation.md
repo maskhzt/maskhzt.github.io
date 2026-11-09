@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 18：文件系统实现"
 date: 2026-11-09 12:00:00 +0800
 permalink: /posts/os-fs-implementation/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, filesystem, inode, fat, bitmap, "408"]
 description: "从「文件的第 5000 个逻辑块落在哪」讲起，拆开文件系统的六个层次、四种分配方式与 UNIX 混合索引，逐项算出 4 TB 的最大文件、4 MB 的 FAT 和 32 MB 的位示图。"
 ---

@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 16：综合项目：把 17 篇拼成一个成品"
 date: 2026-11-09 12:20:00 +0800
 permalink: /posts/agent-capstone-checklist/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, capstone, eval, checklist, production, retrospective]
 description: "从场景选择到灰度上线：需求怎么映射成能力、十步落地顺序、每一步的验收标准、交付物清单、上线前必须回答的十个问题，以及把 16 篇收回一张图的复盘模板。"
 ---

@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 16：抖动、工作集与内存映射"
 date: 2026-11-09 11:40:00 +0800
 permalink: /posts/os-thrashing-workset/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, thrashing, working-set, mmap, page-fault, memory-management]
 description: "从「CPU 空闲、磁盘狂转」这个反常现象讲起，用工作集算清楚抖动是怎么发生的，再讲页面分配策略、缺页率曲线和 mmap，最后落到 Linux 的 kswapd 与 /proc/vmstat。"
 ---

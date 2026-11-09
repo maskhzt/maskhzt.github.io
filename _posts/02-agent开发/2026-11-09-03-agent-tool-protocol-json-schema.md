@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 03：工具协议与 JSON Schema"
 date: 2026-11-09 10:10:00 +0800
 permalink: /posts/agent-tool-protocol-json-schema/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, tool-calling, json-schema, prompt-engineering, function-calling]
 description: "从模型看不见你的函数讲起，把工具说明书的四个要素、JSON Schema 的最小可用子集、OpenAI 与 Anthropic 的真实协议形状，以及工具描述为什么就是 prompt 工程一次说清。"
 ---

@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 20：I/O 硬件与控制方式"
 date: 2026-11-09 12:20:00 +0800
 permalink: /posts/os-io-hardware/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, io, dma, interrupt, device-controller, "408"]
 description: "从 CPU 与设备之间的速度差讲起，拆开设备控制器、I/O 端口编址，再把程序查询、中断、DMA、通道四种控制方式排成一条「CPU 放手」的阶梯，算清 CPU 干预次数与占用时间。"
 ---

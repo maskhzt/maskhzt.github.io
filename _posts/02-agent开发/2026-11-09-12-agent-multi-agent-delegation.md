@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 12：多 Agent：什么时候该拆"
 date: 2026-11-09 11:40:00 +0800
 permalink: /posts/agent-multi-agent-delegation/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, multi-agent, delegation, context-isolation, orchestration, cost]
 description: "从一次把简单任务拆坏的经历讲起，说清单个 agent 撞墙的四个信号、拆的三种形态、委派的真实成本，以及什么情况下根本不该拆。"
 ---

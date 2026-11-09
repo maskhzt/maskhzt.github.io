@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 10：规划：把大任务拆成可验证的步"
 date: 2026-11-09 11:20:00 +0800
 permalink: /posts/agent-planning-decomposition/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, planning, todo, decomposition, react]
 description: "从一句话任务为什么会迷路讲起，把规划拆成清单、可验证的步和终止条件，讲清两种规划方式的失败模式、todo 工具的设计、并行与依赖、max_steps 校验，以及规划器本身怎么评测。"
 ---

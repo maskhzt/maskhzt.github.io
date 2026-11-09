@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 12：内存管理基础与连续分配"
 date: 2026-11-09 11:00:00 +0800
 permalink: /posts/os-memory-basics/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, memory-management, relocation, fragmentation, dynamic-partition, buddy-system]
 description: "从一条 call 指令的地址讲起，讲清绝对装入、静态重定位、动态重定位的差别，界地址寄存器怎么判越界，再用同一张空闲分区表走一遍首次、最佳、最坏、邻近四种算法，最后算完伙伴系统的一个 8 块例子。"
 ---

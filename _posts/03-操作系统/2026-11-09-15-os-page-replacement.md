@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 15：页面置换算法"
 date: 2026-11-09 11:30:00 +0800
 permalink: /posts/os-page-replacement/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, page-replacement, lru, fifo, clock, belady-anomaly]
 description: "把 OPT、FIFO、LRU、CLOCK 和改进 CLOCK 放到同一个引用串上逐次算缺页，给出 3 页框与 4 页框的完整对比，并证明 Belady 异常为什么只发生在非栈式算法上。"
 ---

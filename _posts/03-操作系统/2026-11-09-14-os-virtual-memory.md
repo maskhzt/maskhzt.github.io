@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 14：虚拟内存与请求分页"
 date: 2026-11-09 11:20:00 +0800
 permalink: /posts/os-virtual-memory/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, virtual-memory, demand-paging, page-fault, eat, locality]
 description: "从局部性原理讲起，把虚拟内存的定义、请求分页的页表项、缺页中断的完整流程、页框分配策略和 EAT 计算串起来，最后落到 Linux 的缺页处理与 /proc/vmstat。"
 ---

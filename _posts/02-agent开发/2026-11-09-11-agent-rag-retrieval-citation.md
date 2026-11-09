@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 11：RAG：切分、检索与引用"
 date: 2026-11-09 11:30:00 +0800
 permalink: /posts/agent-rag-retrieval-citation/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, rag, retrieval, chunking, citation]
 description: "从 agent 读不到你文档的真实现象讲起，把 RAG 拆成加载、切分、索引、检索、重排、组装、生成、引用八步，讲清切分为什么是瓶颈、三种引用姿势、检索与引用怎么分别评测，以及文档里没有时该怎么说。"
 ---

@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 00：从零建立 Agent 知识地图"
 date: 2026-11-09 10:00:00 +0800
 permalink: /posts/agent-systematic-learning-map/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, learning-map, llm, tool-calling, context, eval]
 description: "从为什么 Agent 知识会显得零散讲起，把模型、消息契约、token 预算、工具协议、循环、自愈、上下文、记忆、评测、规划、RAG、多 Agent、安全和成本串成一张能落地的知识地图。"
 ---

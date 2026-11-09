@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 09：经典同步问题"
 date: 2026-11-09 10:30:00 +0800
 permalink: /posts/os-classic-sync-problems/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, semaphore, pv-operation, producer-consumer, readers-writers, dining-philosophers]
 description: "把生产者-消费者、读者-写者、哲学家进餐、吸烟者各写一遍完整 PV 代码，讲清两个 P 的顺序为什么不能换、缓冲区为 1 时会发生什么，并给出 408 改错题的判断套路。"
 ---

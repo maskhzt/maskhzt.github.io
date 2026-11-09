@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 08：结构化输出与校验修复"
 date: 2026-11-09 11:00:00 +0800
 permalink: /posts/agent-structured-output/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, structured-output, json-schema, validation, retry, tool-calling]
 description: "从自然语言为什么不能直接进程序讲起，给出 parse_json_reply + validate + repair 的最小实现，讲清三种约束手段的边界、修复提示怎么写、重试上限与降级，以及为什么工具参数也是结构化输出。"
 ---

@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 13：安全：提示注入、权限和沙箱"
 date: 2026-11-09 11:50:00 +0800
 permalink: /posts/agent-security-permissions-sandbox/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, security, prompt-injection, permissions, sandbox, least-privilege]
 description: "从一条工具返回结果里藏的指令讲起，说清提示注入的三个入口、权限分级、人工审批、沙箱与审计，以及那条 rm -rf 到底该在哪一层被拦住。"
 ---

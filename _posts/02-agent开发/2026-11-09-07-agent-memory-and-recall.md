@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 07：记忆：从 messages 到跨会话"
 date: 2026-11-09 10:50:00 +0800
 permalink: /posts/agent-memory-and-recall/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, memory, long-term-memory, retrieval, markdown-store, privacy]
 description: "从会话结束 messages 就没了讲起，用一个 Markdown 文件实现跨会话记忆，讲清写入策略、三种记忆类型、关键词与向量召回、记忆污染与删除，以及为什么大多数 agent 记不住是因为根本没写进去。"
 ---

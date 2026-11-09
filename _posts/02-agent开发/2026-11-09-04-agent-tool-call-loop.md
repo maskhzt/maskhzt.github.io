@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 04：tool_calls、执行与观测回填"
 date: 2026-11-09 10:20:00 +0800
 permalink: /posts/agent-tool-call-loop/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, tool-calls, message-protocol, observation, agent-loop]
 description: "把一轮工具调用拆成四步：拼 messages、模型回 tool_calls、你解析并执行、结果作为 role=tool 回填，并说清 append 顺序、tool_call_id 对账和 arguments 为什么是字符串。"
 ---

@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 14：可观测性与成本"
 date: 2026-11-09 12:00:00 +0800
 permalink: /posts/agent-observability-and-cost/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, observability, trace, cost, logging, reproducibility]
 description: "从一句「任务失败」讲起，说清 trace 与 span 的最小模型、每个 span 该记什么、成本账本怎么算，以及为什么让失败可复现比让它成功更难。"
 ---

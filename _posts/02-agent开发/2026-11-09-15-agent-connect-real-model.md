@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 15：接真模型：把假模型换掉"
 date: 2026-11-09 12:10:00 +0800
 permalink: /posts/agent-connect-real-model/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, llm-api, tool-calling, adapter, retry, error-handling]
 description: "把 L01 的 ScriptedModel 换成真模型：arguments 是字符串、content 可能是 null、schema 必须随请求发、消息顺序错就 400、429 和 5xx 要退避重试，全部差异收敛进一个适配器，循环本身一行不动。"
 ---

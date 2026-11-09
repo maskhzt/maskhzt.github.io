@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 06：上下文工程：塞什么、丢什么"
 date: 2026-11-09 10:40:00 +0800
 permalink: /posts/agent-context-engineering/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, context-engineering, context-window, trimming, lost-in-the-middle, token-budget]
 description: "从一次请求的预算怎么被瓜分讲起，用 run.py 场景 1 推演 messages 从 2 条长到 7 条，讲清三种裁剪策略、什么绝对不能丢、顺序效应，以及为什么裁剪本质上是对消息协议的操作。"
 ---

@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 05：工具报错、自愈和刹车"
 date: 2026-11-09 10:30:00 +0800
 permalink: /posts/agent-tool-error-selfheal-fuse/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, error-handling, self-healing, fuse, idempotency]
 description: "从一次本不该出现的 traceback 讲起，说清工具异常为什么要变成观测、错误信息怎么写模型才用得上、三道刹车装在哪，以及为什么重试下单工具会出两次货。"
 ---

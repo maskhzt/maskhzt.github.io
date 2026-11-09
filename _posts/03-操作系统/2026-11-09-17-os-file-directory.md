@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 17：文件与目录"
 date: 2026-11-09 11:50:00 +0800
 permalink: /posts/os-file-directory/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, filesystem, inode, directory, hard-link, "408"]
 description: "从「删掉原文件，一个还能读、一个不能」讲起，拆开文件名、目录项与 inode 的三层关系，算清四种逻辑结构与四种目录形态的访问代价，给出硬链接与软链接的删除对比和路径检索的读盘次数。"
 ---

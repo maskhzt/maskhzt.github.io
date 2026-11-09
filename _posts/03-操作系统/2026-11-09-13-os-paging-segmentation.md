@@ -2,7 +2,7 @@
 title: "操作系统系统讲解 13：分页、分段与段页式"
 date: 2026-11-09 11:10:00 +0800
 permalink: /posts/os-paging-segmentation/
-categories: [操作系统, 系统讲解]
+categories: [操作系统, 操作系统讲解]
 tags: [os, paging, segmentation, page-table, tlb, address-translation]
 description: "从外部碎片讲起，把页、页框、页表、TLB 和多级页表一路算到 4 KB 页的完整地址转换，再对比分段与段页式，最后落到 408 的五类计算题。"
 ---

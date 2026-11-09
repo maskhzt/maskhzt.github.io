@@ -2,7 +2,7 @@
 title: "Agent 系统讲解 02：token、上下文窗口和单轮预算"
 date: 2026-11-09 10:08:00 +0800
 permalink: /posts/agent-token-context-window-budget/
-categories: [Agent, 系统讲解]
+categories: [Agent, agent系统讲解]
 tags: [agent, token, context-window, budget, temperature, truncation]
 description: "把 token、上下文窗口和单轮预算讲成一个可以算的模型：一次请求的预算被谁花掉、历史为什么会线性增长、多给上下文为什么反而更差。"
 ---
