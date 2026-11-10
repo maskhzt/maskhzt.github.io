@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 05：导数的应用——单调、极值、凹凸"
-date: 2026-11-10 16:25:00 +0800
+date: 2026-11-10 10:25:00 +0800
+
 permalink: /posts/ma-derivative-applications/
 categories: [高等数学, 高等数学讲解]
 tags: [math, derivative, monotonicity, extremum, concavity, asymptote, "301"]

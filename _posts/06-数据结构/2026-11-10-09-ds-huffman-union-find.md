@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 09：哈夫曼树与并查集"
-date: 2026-11-10 14:45:00 +0800
+date: 2026-11-10 08:45:00 +0800
+
 permalink: /posts/ds-huffman-union-find/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, huffman-tree, union-find, prefix-code, "408", wpl]

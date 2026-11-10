@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 15：曲面积分与三大公式"
-date: 2026-11-10 17:15:00 +0800
+date: 2026-11-10 11:15:00 +0800
+
 permalink: /posts/ma-surface-integral/
 categories: [高等数学, 高等数学讲解]
 tags: [math, surface-integral, gauss-formula, stokes-formula, "15", "301"]

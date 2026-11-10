@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 02：矩阵运算"
-date: 2026-11-10 17:30:00 +0800
+date: 2026-11-10 12:10:00 +0800
+
 permalink: /posts/la-matrix-operations/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, matrix, "数学一", "矩阵乘法", transpose]

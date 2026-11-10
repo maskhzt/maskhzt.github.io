@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 05：队列、数组与特殊矩阵"
-date: 2026-11-10 14:25:00 +0800
+date: 2026-11-10 08:25:00 +0800
+
 permalink: /posts/ds-queue-array-matrix/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, queue, circular-queue, array, matrix, sparse-matrix, "408"]

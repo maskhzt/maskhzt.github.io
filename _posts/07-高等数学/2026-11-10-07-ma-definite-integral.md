@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 07：定积分"
-date: 2026-11-10 16:35:00 +0800
+date: 2026-11-10 10:35:00 +0800
+
 permalink: /posts/ma-definite-integral/
 categories: [高等数学, 高等数学讲解]
 tags: [math, definite-integral, riemann-sum, newton-leibniz, accumulation-function, "301"]

@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 01：函数与极限"
-date: 2026-11-10 16:05:00 +0800
+date: 2026-11-10 10:05:00 +0800
+
 permalink: /posts/ma-function-limit/
 categories: [高等数学, 高等数学讲解]
 tags: [calculus, "01", limit, epsilon-delta, 等价无穷小]

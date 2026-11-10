@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 08：相似对角化"
-date: 2026-11-10 18:20:00 +0800
+date: 2026-11-10 12:40:00 +0800
+
 permalink: /posts/la-diagonalization/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, similarity, diagonalization, orthogonal-matrix, "数学一", eigenvalue]

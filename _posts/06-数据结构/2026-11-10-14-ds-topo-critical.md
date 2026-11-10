@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 14：拓扑排序与关键路径"
-date: 2026-11-10 15:10:00 +0800
+date: 2026-11-10 09:10:00 +0800
+
 permalink: /posts/ds-topo-critical/
 categories: [数据结构, 数据结构讲解]
 tags: [topological-sort, aov, aoe, critical-path, "408", dag]

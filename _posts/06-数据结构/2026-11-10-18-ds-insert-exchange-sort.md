@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 18：插入排序与交换排序"
-date: 2026-11-10 15:30:00 +0800
+date: 2026-11-10 09:30:00 +0800
+
 permalink: /posts/ds-insert-exchange-sort/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, insertion-sort, shell-sort, bubble-sort, quicksort, "408"]

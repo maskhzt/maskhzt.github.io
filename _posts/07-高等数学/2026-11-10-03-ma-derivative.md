@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 03：导数与微分"
-date: 2026-11-10 16:15:00 +0800
+date: 2026-11-10 10:15:00 +0800
+
 permalink: /posts/ma-derivative/
 categories: [高等数学, 高等数学讲解]
 tags: [calculus, "03", derivative, chain-rule, 微分]

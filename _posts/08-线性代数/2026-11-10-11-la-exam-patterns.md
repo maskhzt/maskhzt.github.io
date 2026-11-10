@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 11：数一线代计算与证明套路"
-date: 2026-11-10 18:55:00 +0800
+date: 2026-11-10 12:55:00 +0800
+
 permalink: /posts/la-exam-patterns/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, exam-patterns, "数学一", "考研", matrix, eigenvalue]

@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 09：二次型"
-date: 2026-11-10 18:45:00 +0800
+date: 2026-11-10 12:45:00 +0800
+
 permalink: /posts/la-quadratic-form/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, quadratic-form, "数学一", "二次型", matrix, congruence]

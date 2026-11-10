@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 17：幂级数"
-date: 2026-11-10 17:45:00 +0800
+date: 2026-11-10 11:25:00 +0800
+
 permalink: /posts/ma-power-series/
 categories: [高等数学, 高等数学讲解]
 tags: [math, power-series, convergence-radius, sum-function, taylor-expansion, "301"]

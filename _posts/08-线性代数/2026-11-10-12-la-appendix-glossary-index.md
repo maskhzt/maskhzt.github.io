@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 12：附录：公式、考点索引与自检"
-date: 2026-11-10 19:00:00 +0800
+date: 2026-11-10 13:00:00 +0800
+
 permalink: /posts/la-appendix-glossary-index/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, glossary, "数学一", "附录", formula, index]

@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 01：行列式"
-date: 2026-11-10 17:25:00 +0800
+date: 2026-11-10 12:05:00 +0800
+
 permalink: /posts/la-determinant/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, determinant, "数学一", "行列式", cofactor]

@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 13：三重积分"
-date: 2026-11-10 17:05:00 +0800
+date: 2026-11-10 11:05:00 +0800
+
 permalink: /posts/ma-triple-integral/
 categories: [高等数学, 高等数学讲解]
 tags: [math, triple-integral, cylindrical, spherical, "13", "301"]

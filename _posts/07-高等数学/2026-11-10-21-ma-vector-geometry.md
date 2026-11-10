@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 21：向量代数与空间解析几何"
-date: 2026-11-10 18:25:00 +0800
+date: 2026-11-10 11:45:00 +0800
+
 permalink: /posts/ma-vector-geometry/
 categories: [高等数学, 高等数学讲解]
 tags: [math, vector, cross-product, plane-equation, quadric-surface, "21", "301"]

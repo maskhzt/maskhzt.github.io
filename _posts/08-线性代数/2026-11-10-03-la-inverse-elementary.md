@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 03：逆矩阵与初等变换"
-date: 2026-11-10 17:35:00 +0800
+date: 2026-11-10 12:15:00 +0800
+
 permalink: /posts/la-inverse-elementary/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, inverse-matrix, "数学一", "初等变换", adjugate]

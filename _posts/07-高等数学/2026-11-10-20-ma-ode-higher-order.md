@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 20：高阶微分方程"
-date: 2026-11-10 18:00:00 +0800
+date: 2026-11-10 11:40:00 +0800
+
 permalink: /posts/ma-ode-higher-order/
 categories: [高等数学, 高等数学讲解]
 tags: [math, differential-equation, characteristic-equation, second-order, undetermined-coefficients, euler-equation, "301"]

@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 11：全微分与多元极值"
-date: 2026-11-10 16:55:00 +0800
+date: 2026-11-10 10:55:00 +0800
+
 permalink: /posts/ma-total-differential-extrema/
 categories: [高等数学, 高等数学讲解]
 tags: [math, total-differential, gradient, extremum, lagrange-multiplier, "301"]

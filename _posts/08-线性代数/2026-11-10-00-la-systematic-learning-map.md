@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 00：从零建立线性代数知识地图"
-date: 2026-11-10 16:50:00 +0800
+date: 2026-11-10 12:00:00 +0800
+
 permalink: /posts/la-systematic-learning-map/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, learning-map, "数学一", matrix, eigenvalue]

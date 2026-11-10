@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 06：线性方程组"
-date: 2026-11-10 18:10:00 +0800
+date: 2026-11-10 12:30:00 +0800
+
 permalink: /posts/la-linear-equations/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, linear-equations, gaussian-elimination, fundamental-solution-set, "数学一", rank]

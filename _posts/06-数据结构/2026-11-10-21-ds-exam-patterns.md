@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 21：408 计算题与综合题套路"
-date: 2026-11-10 15:45:00 +0800
+date: 2026-11-10 09:45:00 +0800
+
 permalink: /posts/ds-exam-patterns/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, "408", exam, problem-patterns, review]

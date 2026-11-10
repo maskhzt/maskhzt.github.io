@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 20：外部排序与多路归并"
-date: 2026-11-10 15:40:00 +0800
+date: 2026-11-10 09:40:00 +0800
+
 permalink: /posts/ds-external-sort/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, external-sort, k-way-merge, loser-tree, replacement-selection, "408"]

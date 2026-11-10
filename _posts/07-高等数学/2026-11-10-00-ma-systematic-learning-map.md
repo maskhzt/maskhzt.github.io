@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 00：从零建立高等数学知识地图"
-date: 2026-11-10 16:00:00 +0800
+date: 2026-11-10 10:00:00 +0800
+
 permalink: /posts/ma-systematic-learning-map/
 categories: [高等数学, 高等数学讲解]
 tags: [calculus, learning-map, "数学一", limit, derivative, integral]

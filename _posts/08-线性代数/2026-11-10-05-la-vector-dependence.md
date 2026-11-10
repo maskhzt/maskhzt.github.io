@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 05：向量组与线性相关性"
-date: 2026-11-10 18:05:00 +0800
+date: 2026-11-10 12:25:00 +0800
+
 permalink: /posts/la-vector-dependence/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, vector, linear-dependence, maximal-independent-set, "数学一", gram-schmidt]

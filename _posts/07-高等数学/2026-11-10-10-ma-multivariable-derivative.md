@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 10：多元函数与偏导数"
-date: 2026-11-10 16:50:00 +0800
+date: 2026-11-10 10:50:00 +0800
+
 permalink: /posts/ma-multivariable-derivative/
 categories: [高等数学, 高等数学讲解]
 tags: [math, multivariable, partial-derivative, chain-rule, implicit-function, "301"]

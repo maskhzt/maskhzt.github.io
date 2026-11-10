@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 02：连续与间断"
-date: 2026-11-10 16:10:00 +0800
+date: 2026-11-10 10:10:00 +0800
+
 permalink: /posts/ma-continuity/
 categories: [高等数学, 高等数学讲解]
 tags: [calculus, "02", continuity, discontinuity, 零点定理]

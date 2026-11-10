@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 23：附录：公式、考点索引与自检"
-date: 2026-11-10 18:35:00 +0800
+date: 2026-11-10 11:55:00 +0800
+
 permalink: /posts/ma-appendix-glossary-index/
 categories: [高等数学, 高等数学讲解]
 tags: [math, appendix, glossary, formula-sheet, "23", "301"]

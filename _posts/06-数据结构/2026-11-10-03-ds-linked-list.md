@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 03：链表：单链、双链、循环与静态链表"
-date: 2026-11-10 14:15:00 +0800
+date: 2026-11-10 08:15:00 +0800
+
 permalink: /posts/ds-linked-list/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, linked-list, "408", doubly-linked-list, circular-list, static-linked-list]

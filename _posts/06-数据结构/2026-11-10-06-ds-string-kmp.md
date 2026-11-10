@@ -1,6 +1,7 @@
-﻿---
+---
 title: "数据结构系统讲解 06：串与 KMP：为什么能跳过"
-date: 2026-11-10 14:30:00 +0800
+date: 2026-11-10 08:30:00 +0800
+
 permalink: /posts/ds-string-kmp/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, string, pattern-matching, kmp, next-array, "408"]

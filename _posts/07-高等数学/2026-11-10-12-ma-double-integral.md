@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 12：二重积分"
-date: 2026-11-10 17:00:00 +0800
+date: 2026-11-10 11:00:00 +0800
+
 permalink: /posts/ma-double-integral/
 categories: [高等数学, 高等数学讲解]
 tags: [math, double-integral, iterated-integral, polar-coordinates, order-swap, "301"]

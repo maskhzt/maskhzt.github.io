@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 02：顺序表：数组为什么从 0 开始"
-date: 2026-11-10 14:10:00 +0800
+date: 2026-11-10 08:10:00 +0800
+
 permalink: /posts/ds-sequential-list/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, sequential-list, array, "408", random-access, time-complexity]

@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 19：一阶微分方程"
-date: 2026-11-10 17:55:00 +0800
+date: 2026-11-10 11:35:00 +0800
+
 permalink: /posts/ma-ode-first-order/
 categories: [高等数学, 高等数学讲解]
 tags: [math, differential-equation, separable-equation, homogeneous-equation, linear-equation, bernoulli, "301"]

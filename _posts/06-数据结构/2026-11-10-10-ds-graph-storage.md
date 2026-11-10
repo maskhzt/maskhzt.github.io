@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 10：图：术语与四种存储"
-date: 2026-11-10 14:50:00 +0800
+date: 2026-11-10 08:50:00 +0800
+
 permalink: /posts/ds-graph-storage/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, graph, adjacency-matrix, adjacency-list, "408", orthogonal-list]

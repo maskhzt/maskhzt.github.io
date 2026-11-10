@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 07：树与二叉树：定义、性质与存储"
-date: 2026-11-10 14:35:00 +0800
+date: 2026-11-10 08:35:00 +0800
+
 permalink: /posts/ds-tree-binary-tree/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, tree, binary-tree, complete-binary-tree, storage, "408"]

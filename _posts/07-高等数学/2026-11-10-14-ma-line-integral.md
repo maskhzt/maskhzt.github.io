@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 14：曲线积分"
-date: 2026-11-10 17:10:00 +0800
+date: 2026-11-10 11:10:00 +0800
+
 permalink: /posts/ma-line-integral/
 categories: [高等数学, 高等数学讲解]
 tags: [math, line-integral, green-formula, path-independence, "14", "301"]

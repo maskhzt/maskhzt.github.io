@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 09：反常积分"
-date: 2026-11-10 16:45:00 +0800
+date: 2026-11-10 10:45:00 +0800
+
 permalink: /posts/ma-improper-integral/
 categories: [高等数学, 高等数学讲解]
 tags: [math, improper-integral, infinite-interval, singularity, convergence, "301"]

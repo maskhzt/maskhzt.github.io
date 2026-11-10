@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 07：特征值与特征向量"
-date: 2026-11-10 18:15:00 +0800
+date: 2026-11-10 12:35:00 +0800
+
 permalink: /posts/la-eigenvalues/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, eigenvalue, eigenvector, characteristic-polynomial, "数学一", trace]

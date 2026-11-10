@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 11：图的遍历：BFS 与 DFS"
-date: 2026-11-10 14:55:00 +0800
+date: 2026-11-10 08:55:00 +0800
+
 permalink: /posts/ds-graph-traversal/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, graph, bfs, dfs, "408", traversal]

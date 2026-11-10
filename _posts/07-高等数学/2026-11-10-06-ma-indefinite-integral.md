@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 06：不定积分"
-date: 2026-11-10 16:30:00 +0800
+date: 2026-11-10 10:30:00 +0800
+
 permalink: /posts/ma-indefinite-integral/
 categories: [高等数学, 高等数学讲解]
 tags: [math, integral, antiderivative, substitution, integration-by-parts, "301"]

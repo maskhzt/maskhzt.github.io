@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 04：微分中值定理"
-date: 2026-11-10 16:20:00 +0800
+date: 2026-11-10 10:20:00 +0800
+
 permalink: /posts/ma-mean-value-theorem/
 categories: [高等数学, 高等数学讲解]
 tags: [calculus, "04", 中值定理, rolle, lagrange, 洛必达]

@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 08：定积分的应用"
-date: 2026-11-10 16:40:00 +0800
+date: 2026-11-10 10:40:00 +0800
+
 permalink: /posts/ma-integral-applications/
 categories: [高等数学, 高等数学讲解]
 tags: [math, area, volume-of-revolution, arc-length, work, "301"]

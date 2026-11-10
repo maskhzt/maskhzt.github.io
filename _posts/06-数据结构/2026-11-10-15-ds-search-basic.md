@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 15：查找基础：顺序、折半、分块"
-date: 2026-11-10 15:15:00 +0800
+date: 2026-11-10 09:15:00 +0800
+
 permalink: /posts/ds-search-basic/
 categories: [数据结构, 数据结构讲解]
 tags: [search, binary-search, decision-tree, asl, "408", block-search]

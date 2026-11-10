@@ -1,6 +1,7 @@
 ---
 title: "线性代数系统讲解 10：正定与合同"
-date: 2026-11-10 18:50:00 +0800
+date: 2026-11-10 12:50:00 +0800
+
 permalink: /posts/la-positive-definite/
 categories: [线性代数, 线性代数讲解]
 tags: [linear-algebra, positive-definite, "数学一", "正定", congruence, quadratic-form]

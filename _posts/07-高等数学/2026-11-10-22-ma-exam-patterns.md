@@ -1,6 +1,7 @@
 ---
 title: "高等数学系统讲解 22：数一计算题与证明题套路"
-date: 2026-11-10 18:30:00 +0800
+date: 2026-11-10 11:50:00 +0800
+
 permalink: /posts/ma-exam-patterns/
 categories: [高等数学, 高等数学讲解]
 tags: [math, exam, problem-patterns, "22", "301", "数学一"]

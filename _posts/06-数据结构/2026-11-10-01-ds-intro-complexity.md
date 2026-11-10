@@ -1,6 +1,7 @@
 ---
 title: "数据结构系统讲解 01：绪论：数据结构、抽象数据类型与复杂度"
-date: 2026-11-10 14:05:00 +0800
+date: 2026-11-10 08:05:00 +0800
+
 permalink: /posts/ds-intro-complexity/
 categories: [数据结构, 数据结构讲解]
 tags: [data-structure, adt, "408", time-complexity, space-complexity, algorithm]
