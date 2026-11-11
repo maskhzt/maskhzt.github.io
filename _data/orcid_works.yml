@@ -1,6 +1,6 @@
 id: 0009-0000-0766-4916
 profile_url: https://orcid.org/0009-0000-0766-4916
-updated_at: '2026-11-11T04:34:37Z'
+updated_at: '2026-11-11T05:38:16Z'
 source: snapshot
 items:
 - title: 'Anchor-Sketch: Persistence-Driven Eviction for Identifying Persistent and Infrequent Flows'
@@ -13,6 +13,25 @@ items:
   date_label: 2026-07
   doi: 10.1109/jcc72984.2026.00028
   url: https://doi.org/10.1109/jcc72984.2026.00028
+  authors:
+  - name: Zhihong Wang
+    self: false
+  - name: Tao Zhang
+    self: false
+  - name: Haozhi Tang
+    self: true
+  - name: Hui Yu
+    self: false
+  - name: Linfei Dong
+    self: false
+  - name: Ziyi Liu
+    self: false
+  - name: Yunsheng Liu
+    self: false
+  - name: Xidao Luan
+    self: false
+  - name: Hui Yin
+    self: false
 - title: 'Switch-Transparent Load Balancing for RDMA Data Centers: A Host-Only Approach'
   type: conference-paper
   type_label: 会议论文
@@ -23,6 +42,27 @@ items:
   date_label: 2026-06
   doi: 10.1109/iwqos70441.2026.11661291
   url: https://doi.org/10.1109/iwqos70441.2026.11661291
+  authors:
+  - name: Tao Zhang
+    self: false
+  - name: Ao Zhang
+    self: false
+  - name: Yuchen Wang
+    self: false
+  - name: Haozhi Tang
+    self: true
+  - name: Linfei Dong
+    self: false
+  - name: Ziyi Liu
+    self: false
+  - name: Hui Yu
+    self: false
+  - name: Siyuan Fan
+    self: false
+  - name: Hui Yin
+    self: false
+  - name: Fangmin Li
+    self: false
 - title: Breaking the Accuracy-Latency Trade-Off in Sketch Compression for Network Measurement
   type: conference-paper
   type_label: 会议论文
@@ -33,6 +73,29 @@ items:
   date_label: 2026-06
   doi: 10.1109/iwqos70441.2026.11661031
   url: https://doi.org/10.1109/iwqos70441.2026.11661031
+  authors:
+  - name: Hui Yu
+    self: false
+  - name: Tao Zhang
+    self: false
+  - name: Siyuan Fan
+    self: false
+  - name: Ziyi Liu
+    self: false
+  - name: Zhihong Wang
+    self: false
+  - name: Yunsheng Liu
+    self: false
+  - name: Linfei Dong
+    self: false
+  - name: Haozhi Tang
+    self: true
+  - name: Ao Zhang
+    self: false
+  - name: Hui Yin
+    self: false
+  - name: Fangmin Li
+    self: false
 - title: Balancing data center traffic load with speeding up flow-transmission
   type: journal-article
   type_label: 期刊论文
@@ -43,3 +106,16 @@ items:
   date_label: 2026-01
   doi: 10.1016/j.future.2025.107972
   url: https://doi.org/10.1016/j.future.2025.107972
+  authors:
+  - name: Tao Zhang
+    self: false
+  - name: Yunsheng Liu
+    self: false
+  - name: Haotian Jing
+    self: false
+  - name: Siyuan Fan
+    self: false
+  - name: Haozhi Tang
+    self: true
+  - name: Xidao Luan
+    self: false

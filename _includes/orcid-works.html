@@ -1,5 +1,5 @@
 {%- comment -%}
-  科研成果列表。
+  科研成果列表（含作者）。
   数据由 _plugins/orcid_works.rb 在构建时从 ORCID 公共 API 同步到 site.data.orcid_works，
   这里只负责渲染；想改样式就改下面的 <style>，想换 ORCID 号改 _config.yml 的 `orcid:`。
 {%- endcomment -%}
@@ -8,9 +8,7 @@
 {%- assign profile = ow.profile_url | default: config_profile -%}
 <div class="orcid-works">
   <style>
-    .orcid-works { margin: 1.5rem 0 0.5rem; }
-    .orcid-works__meta { margin: 0 0 1rem; font-size: 0.8125rem; opacity: 0.7; }
-    .orcid-works__meta a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+    .orcid-works { margin: 1.25rem 0 0.5rem; }
     .orcid-works__list { margin: 0; padding: 0; list-style: none; counter-reset: orcid-works; }
     .orcid-works__item {
       position: relative;
@@ -33,12 +31,19 @@
       text-align: center;
     }
     .orcid-works__title { font-weight: 600; line-height: 1.55; }
+    .orcid-works__authors {
+      margin-top: 0.15rem;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      opacity: 0.78;
+    }
+    .orcid-works__authors strong { font-weight: 600; opacity: 0.95; }
     .orcid-works__detail {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 0.35rem 0.65rem;
-      margin-top: 0.2rem;
+      margin-top: 0.25rem;
       font-size: 0.8125rem;
       opacity: 0.75;
     }
@@ -54,12 +59,6 @@
     .orcid-works__empty { margin: 0; font-size: 0.9rem; opacity: 0.7; }
   </style>
   {%- if ow and ow.items and ow.items.size > 0 -%}
-  <p class="orcid-works__meta">
-    <i class="fa-brands fa-orcid" aria-hidden="true"></i>
-    共 <strong>{{ ow.items.size }}</strong> 项公开成果 · 来自
-    <a href="{{ profile }}" target="_blank" rel="noopener">ORCID</a>
-    {%- if ow.updated_at %} · 同步于 {{ ow.updated_at | date: "%Y-%m-%d" }}{% endif %}
-  </p>
   <ol class="orcid-works__list">
     {%- for item in ow.items %}
     <li class="orcid-works__item">
@@ -70,6 +69,14 @@
         {{ item.title | escape }}
         {%- endif -%}
       </div>
+      {%- if item.authors and item.authors.size > 0 -%}
+      <div class="orcid-works__authors">
+        {%- for author in item.authors -%}
+          {%- if author.self -%}<strong>{{ author.name | escape }}</strong>{%- else -%}{{ author.name | escape }}{%- endif -%}
+          {%- unless forloop.last %}, {% endunless -%}
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
       <div class="orcid-works__detail">
         {%- if item.type_label -%}<span class="orcid-works__type">{{ item.type_label }}</span>{%- endif -%}
         {%- if item.venue -%}<span class="orcid-works__venue">{{ item.venue | escape }}</span>{%- endif -%}
