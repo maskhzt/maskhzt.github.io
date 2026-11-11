@@ -1,58 +1,72 @@
-﻿/* 页脚粒子星座效果
+﻿/* 全站背景粒子星座
  *
- * 在一块 canvas 上画若干缓慢游动的点，距离近的点之间连一条线，
- * 鼠标移过页脚时点会被轻轻推开、并与指针连线。
+ * 在 <body> 下插入一块 position:fixed 的 canvas 作为整页背景（z-index 低于内容），
+ * 点缓慢游动、近距连线；鼠标移过时点被轻轻推开并与指针连线。
+ * 所有页面共用，无外部依赖。
  *
- * 设计上尽量「便宜」：
- *   - 点数量按面积算，最多 70 个，两两连线是 O(n²) 但 n 很小；
- *   - 页脚滚出视口 / 标签页切到后台时暂停 requestAnimationFrame；
+ * 性能取舍：
+ *   - 点数按视口面积算，上限 110 个，两两比较 O(n²) 但 n 很小；
+ *   - 设备像素比封顶 1.5，避免 4K 屏每帧清空超大画布；
+ *   - 帧率锁在 30fps，标签页切到后台时暂停 requestAnimationFrame；
  *   - 系统开启「减少动态效果」时只画一帧静态图；
- *   - 颜色取自页脚文字颜色，所以明暗主题切换会自动跟着变。
+ *   - 颜色取自正文字色，明暗主题切换时自动重新取色。
  */
 (function () {
   'use strict';
 
-  var canvas = document.getElementById('footer-particles-canvas');
-  if (!canvas || typeof canvas.getContext !== 'function') {
+  if (window.__pageParticlesReady) {
     return;
   }
+  window.__pageParticlesReady = true;
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  var CONFIG = {
+    density: 19000, // 每个点平均占据的像素面积
+    maxParticles: 120,
+    minParticles: 18,
+    linkDistance: 150, // 两点连线的最远距离
+    pointerDistance: 170, // 与鼠标连线的最远距离
+    speed: 0.22, // 每帧最大位移
+    radius: 1.5,
+    maxDpr: 1.5
+  };
+
+  var canvas = document.createElement('canvas');
+  canvas.id = 'page-particles';
+  canvas.setAttribute('aria-hidden', 'true');
+  document.body.insertBefore(canvas, document.body.firstChild);
 
   var ctx = canvas.getContext('2d');
   if (!ctx) {
     return;
   }
 
-  var footer = canvas.parentElement;
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-  var CONFIG = {
-    density: 3600, // 每个点平均占据的像素面积
-    maxParticles: 90,
-    minParticles: 16,
-    linkDistance: 140, // 两点连线的最远距离
-    pointerDistance: 150, // 与鼠标连线的最远距离
-    speed: 0.28, // 每帧最大位移
-    radius: 1.6
-  };
-
   var width = 0;
   var height = 0;
   var particles = [];
-  var rgb = '128, 128, 128';
   var pointer = null;
+  var rgb = '128, 128, 128';
+  var alphaLine = 0.16;
+  var alphaDot = 0.4;
   var frameId = null;
-  var onScreen = true;
+  var lastFrame = 0;
+  var FRAME_INTERVAL = 1000 / 30;
 
   function clamp(value, min, max) {
     return Math.min(Math.max(value, min), max);
   }
 
-  function readColor() {
-    var color = window.getComputedStyle(footer).color || '';
+  function readTheme() {
+    var color = window.getComputedStyle(document.body).color || '';
     var match = color.match(/(\d+)\D+(\d+)\D+(\d+)/);
     if (match) {
       rgb = match[1] + ', ' + match[2] + ', ' + match[3];
     }
+
+    var dark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+    alphaLine = dark ? 0.24 : 0.2;
+    alphaDot = dark ? 0.5 : 0.45;
   }
 
   function createParticles() {
@@ -71,14 +85,14 @@
   }
 
   function resize() {
-    var rect = footer.getBoundingClientRect();
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
-
-    width = Math.max(1, Math.round(rect.width));
-    height = Math.max(1, Math.round(rect.height));
+    var dpr = Math.min(window.devicePixelRatio || 1, CONFIG.maxDpr);
+    width = Math.max(1, document.documentElement.clientWidth);
+    height = Math.max(1, document.documentElement.clientHeight);
 
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     createParticles();
@@ -101,13 +115,12 @@
         p.y = clamp(p.y, 0, height);
       }
 
-      // 鼠标附近轻轻推开，避免点糊在指针上
       if (pointer) {
         var dx = p.x - pointer.x;
         var dy = p.y - pointer.y;
         var dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist > 0.01 && dist < 80) {
-          var push = ((80 - dist) / 80) * 0.6;
+        if (dist > 0.01 && dist < 90) {
+          var push = ((90 - dist) / 90) * 0.7;
           p.x += (dx / dist) * push;
           p.y += (dy / dist) * push;
         }
@@ -139,20 +152,20 @@
         var dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < CONFIG.linkDistance) {
-          line(a.x, a.y, b.x, b.y, 0.5 * (1 - dist / CONFIG.linkDistance));
+          line(a.x, a.y, b.x, b.y, alphaLine * (1 - dist / CONFIG.linkDistance));
         }
       }
     }
 
     if (pointer) {
       for (i = 0; i < particles.length; i++) {
-        var p = particles[i];
-        var pdx = p.x - pointer.x;
-        var pdy = p.y - pointer.y;
+        var target = particles[i];
+        var pdx = target.x - pointer.x;
+        var pdy = target.y - pointer.y;
         var pdist = Math.sqrt(pdx * pdx + pdy * pdy);
 
         if (pdist < CONFIG.pointerDistance) {
-          line(p.x, p.y, pointer.x, pointer.y, 0.45 * (1 - pdist / CONFIG.pointerDistance));
+          line(target.x, target.y, pointer.x, pointer.y, alphaLine * 1.6 * (1 - pdist / CONFIG.pointerDistance));
         }
       }
     }
@@ -161,13 +174,20 @@
       var dot = particles[i];
       ctx.beginPath();
       ctx.arc(dot.x, dot.y, CONFIG.radius, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(' + rgb + ', 0.75)';
+      ctx.fillStyle = 'rgba(' + rgb + ', ' + alphaDot + ')';
       ctx.fill();
     }
   }
 
-  function tick() {
+  function tick(now) {
     frameId = window.requestAnimationFrame(tick);
+
+    // 背景动画没必要跑满 60fps，锁到 30fps 更省电
+    if (now - lastFrame < FRAME_INTERVAL) {
+      return;
+    }
+    lastFrame = now;
+
     moveParticles();
     draw();
   }
@@ -177,7 +197,7 @@
       draw();
       return;
     }
-    if (frameId !== null || !onScreen || document.hidden) {
+    if (frameId !== null || document.hidden) {
       return;
     }
     frameId = window.requestAnimationFrame(tick);
@@ -192,28 +212,16 @@
 
   function refresh() {
     stop();
+    readTheme();
     resize();
     start();
   }
 
-  // 页脚尺寸变化（窗口缩放、字体变化）时重建
-  if (typeof ResizeObserver === 'function') {
-    new ResizeObserver(refresh).observe(footer);
-  } else {
-    window.addEventListener('resize', refresh);
-  }
-
-  // 滚出视口就停，省电
-  if (typeof IntersectionObserver === 'function') {
-    new IntersectionObserver(function (entries) {
-      onScreen = entries[0].isIntersecting;
-      if (onScreen) {
-        start();
-      } else {
-        stop();
-      }
-    }).observe(footer);
-  }
+  var resizeTimer = null;
+  window.addEventListener('resize', function () {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(refresh, 150);
+  });
 
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
@@ -223,40 +231,34 @@
     }
   });
 
-  // 明暗主题切换后重新取色
-  readColor();
-  new MutationObserver(function () {
-    readColor();
-    draw();
-  }).observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ['class', 'data-mode', 'data-bs-theme', 'style']
-  });
-
-  footer.addEventListener('pointermove', function (event) {
-    var rect = footer.getBoundingClientRect();
-    pointer = {
-      x: event.clientX - rect.left,
-      y: event.clientY - rect.top
-    };
+  window.addEventListener('pointermove', function (event) {
+    pointer = { x: event.clientX, y: event.clientY };
     if (reduceMotion.matches) {
       draw();
     }
   });
 
-  footer.addEventListener('pointerleave', function () {
+  window.addEventListener('pointerleave', function () {
     pointer = null;
     if (reduceMotion.matches) {
       draw();
     }
   });
 
-  // 系统「减少动态效果」被切换时重置
+  // 明暗主题切换后重新取色
+  new MutationObserver(function () {
+    readTheme();
+    draw();
+  }).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class', 'data-mode', 'data-bs-theme', 'style']
+  });
+
   if (typeof reduceMotion.addEventListener === 'function') {
     reduceMotion.addEventListener('change', refresh);
   }
 
-  readColor();
+  readTheme();
   resize();
   start();
 })();

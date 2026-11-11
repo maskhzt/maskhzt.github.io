@@ -13,10 +13,9 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
-
-- type: orcid
-  icon: "fa-brands fa-orcid"
-  url: https://orcid.org/0009-0000-0766-4916
+# - type: orcid
+#   icon: "fa-brands fa-orcid"
+#   url: https://orcid.org/0009-0000-0766-4916
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon

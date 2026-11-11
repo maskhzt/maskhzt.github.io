@@ -1,47 +1,24 @@
 <!-- The Footer -->
 
 <style>
-  /* 页脚粒子星座：把页脚垫高，canvas 铺满并置于文字下方 */
-  .footer-particles {
-    position: relative;
-    overflow: hidden;
-    height: 8.5rem;
-  }
-
-  @media (max-width: 991.98px) {
-    .footer-particles {
-      height: 10rem;
-    }
-  }
-
-  .footer-particles .footer-particles__canvas {
-    position: absolute;
+  /* 整页粒子背景（见 assets/js/page-particles.js）。
+     z-index: -1 让它待在 body 背景之上、所有正文之下；
+     body 的背景色会被提升到根画布绘制，所以不会被它盖住。 */
+  #page-particles {
+    position: fixed;
     inset: 0;
-    width: 100%;
-    height: 100%;
+    z-index: -1;
     pointer-events: none;
-  }
-
-  .footer-particles > p {
-    position: relative;
-    z-index: 1;
   }
 </style>
 
 <footer
   aria-label="Site Info"
   class="
-    footer-particles
     d-flex flex-column justify-content-center text-muted
     flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
   "
 >
-  <canvas
-    class="footer-particles__canvas"
-    id="footer-particles-canvas"
-    aria-hidden="true"
-  ></canvas>
-
   <p>
     {{- '©' }}
     <time>{{ 'now' | date: '%Y' }}</time>
@@ -83,4 +60,4 @@
   </p>
 </footer>
 
-<script defer src="{{ '/assets/js/footer-particles.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/page-particles.js' | relative_url }}"></script>
