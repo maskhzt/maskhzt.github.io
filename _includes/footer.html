@@ -10,6 +10,14 @@
     z-index: -1;
     pointer-events: none;
   }
+
+  /* 正文栏和右侧栏垫一层 88% 的底色，粒子只在留白处显现，
+     保证文字始终落在干净背景上。想更明显就把 88% 调小（如 80%），
+     想更干净就调大（如 94%）。 */
+  main,
+  #panel-wrapper {
+    background-color: color-mix(in srgb, var(--main-bg) 88%, transparent);
+  }
 </style>
 
 <footer
