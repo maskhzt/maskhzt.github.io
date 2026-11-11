@@ -42,6 +42,14 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
+# ORCID 科研成果自动同步（渲染在 /about/ 页面，见 _includes/orcid-works.html）
+# 每次构建时会从 ORCID 公共 API 拉取公开成果；拉取失败则沿用 _data/orcid_works.yml 快照。
+orcid:
+  enabled: true
+  id: 0009-0000-0766-4916 # 也可以直接写 https://orcid.org/0009-0000-0766-4916
+  max_works: 50 # 最多显示多少条
+  cache_ttl_hours: 6 # 本地缓存有效期（小时），减少重复请求
+
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code

@@ -12,6 +12,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # 定时重建：每 6 小时重新构建一次（01:23 / 07:23 / 13:23 / 19:23 UTC），
+  # 这样 ORCID 里新增或修改的成果会自动出现在 /about/ 页面，无需手动提交。
+  schedule:
+    - cron: "23 */6 * * *"
+
 permissions:
   contents: read
   pages: write

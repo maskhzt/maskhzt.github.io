@@ -1,0 +1,45 @@
+id: 0009-0000-0766-4916
+profile_url: https://orcid.org/0009-0000-0766-4916
+updated_at: '2026-11-11T04:34:37Z'
+source: snapshot
+items:
+- title: 'Anchor-Sketch: Persistence-Driven Eviction for Identifying Persistent and Infrequent Flows'
+  type: conference-paper
+  type_label: 会议论文
+  venue: 2026 IEEE International Conference on Joint Cloud Computing (JCC)
+  year: 2026
+  month: 7
+  day: null
+  date_label: 2026-07
+  doi: 10.1109/jcc72984.2026.00028
+  url: https://doi.org/10.1109/jcc72984.2026.00028
+- title: 'Switch-Transparent Load Balancing for RDMA Data Centers: A Host-Only Approach'
+  type: conference-paper
+  type_label: 会议论文
+  venue: 2026 IEEE/ACM International Symposium on Quality of Service (IWQoS)
+  year: 2026
+  month: 6
+  day: null
+  date_label: 2026-06
+  doi: 10.1109/iwqos70441.2026.11661291
+  url: https://doi.org/10.1109/iwqos70441.2026.11661291
+- title: Breaking the Accuracy-Latency Trade-Off in Sketch Compression for Network Measurement
+  type: conference-paper
+  type_label: 会议论文
+  venue: 2026 IEEE/ACM International Symposium on Quality of Service (IWQoS)
+  year: 2026
+  month: 6
+  day: null
+  date_label: 2026-06
+  doi: 10.1109/iwqos70441.2026.11661031
+  url: https://doi.org/10.1109/iwqos70441.2026.11661031
+- title: Balancing data center traffic load with speeding up flow-transmission
+  type: journal-article
+  type_label: 期刊论文
+  venue: Future Generation Computer Systems
+  year: 2026
+  month: 1
+  day: null
+  date_label: 2026-01
+  doi: 10.1016/j.future.2025.107972
+  url: https://doi.org/10.1016/j.future.2025.107972

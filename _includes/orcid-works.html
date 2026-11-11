@@ -1,0 +1,87 @@
+{%- comment -%}
+  科研成果列表。
+  数据由 _plugins/orcid_works.rb 在构建时从 ORCID 公共 API 同步到 site.data.orcid_works，
+  这里只负责渲染；想改样式就改下面的 <style>，想换 ORCID 号改 _config.yml 的 `orcid:`。
+{%- endcomment -%}
+{%- assign ow = site.data.orcid_works -%}
+{%- capture config_profile -%}https://orcid.org/{{ site.orcid.id }}{%- endcapture -%}
+{%- assign profile = ow.profile_url | default: config_profile -%}
+<div class="orcid-works">
+  <style>
+    .orcid-works { margin: 1.5rem 0 0.5rem; }
+    .orcid-works__meta { margin: 0 0 1rem; font-size: 0.8125rem; opacity: 0.7; }
+    .orcid-works__meta a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+    .orcid-works__list { margin: 0; padding: 0; list-style: none; counter-reset: orcid-works; }
+    .orcid-works__item {
+      position: relative;
+      padding: 0.7rem 0 0.7rem 2.2rem;
+      border-top: 1px dashed rgba(128, 128, 128, 0.28);
+    }
+    .orcid-works__item:first-child { border-top: none; }
+    .orcid-works__item::before {
+      counter-increment: orcid-works;
+      content: counter(orcid-works);
+      position: absolute;
+      left: 0;
+      top: 0.75rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: rgba(128, 128, 128, 0.14);
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+    .orcid-works__title { font-weight: 600; line-height: 1.55; }
+    .orcid-works__detail {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem 0.65rem;
+      margin-top: 0.2rem;
+      font-size: 0.8125rem;
+      opacity: 0.75;
+    }
+    .orcid-works__type {
+      padding: 0.05rem 0.45rem;
+      border-radius: 0.3rem;
+      background: rgba(128, 128, 128, 0.14);
+      font-size: 0.75rem;
+      white-space: nowrap;
+    }
+    .orcid-works__venue { font-style: italic; }
+    .orcid-works__date { font-variant-numeric: tabular-nums; }
+    .orcid-works__empty { margin: 0; font-size: 0.9rem; opacity: 0.7; }
+  </style>
+  {%- if ow and ow.items and ow.items.size > 0 -%}
+  <p class="orcid-works__meta">
+    <i class="fa-brands fa-orcid" aria-hidden="true"></i>
+    共 <strong>{{ ow.items.size }}</strong> 项公开成果 · 来自
+    <a href="{{ profile }}" target="_blank" rel="noopener">ORCID</a>
+    {%- if ow.updated_at %} · 同步于 {{ ow.updated_at | date: "%Y-%m-%d" }}{% endif %}
+  </p>
+  <ol class="orcid-works__list">
+    {%- for item in ow.items %}
+    <li class="orcid-works__item">
+      <div class="orcid-works__title">
+        {%- if item.url -%}
+        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title | escape }}</a>
+        {%- else -%}
+        {{ item.title | escape }}
+        {%- endif -%}
+      </div>
+      <div class="orcid-works__detail">
+        {%- if item.type_label -%}<span class="orcid-works__type">{{ item.type_label }}</span>{%- endif -%}
+        {%- if item.venue -%}<span class="orcid-works__venue">{{ item.venue | escape }}</span>{%- endif -%}
+        {%- if item.date_label -%}<span class="orcid-works__date">{{ item.date_label }}</span>{%- endif -%}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+  {%- else -%}
+  <p class="orcid-works__empty">
+    暂无公开的成果记录，可以直接访问
+    <a href="{{ profile }}" target="_blank" rel="noopener">ORCID 主页</a>。
+  </p>
+  {%- endif -%}
+</div>
