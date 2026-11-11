@@ -25,9 +25,9 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   var CONFIG = {
-    density: 12000, // 每个点平均占据的像素面积
-    maxParticles: 160,
-    minParticles: 36,
+    density: 16000, // 每个点平均占据的像素面积
+    maxParticles: 130,
+    minParticles: 28,
     linkDistance: 115, // 两点连线的最远距离
     pointerDistance: 190, // 与鼠标连线 / 吸引的最远距离
     pointerPull: 0.03, // 鼠标对点的吸引强度
